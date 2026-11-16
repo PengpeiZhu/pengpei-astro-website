@@ -8,13 +8,14 @@ Record future feature, content, design and maintenance changes here, newest firs
 - Updated the download to the supplied three-page `PengpeiZhu_CV.pdf` at the existing address. The site's CV section now shows 16 November 2026.
 - Added a floating **Back to top** control and credited Fra Angelico's paintings at the San Marco monastery in the opening section.
 - The local preview loaded the map at desktop and mobile widths. The return control worked by keyboard and by clicking, and the served PDF matched the supplied file byte for byte.
-- Prepared for owner review in a local branch before merging to `main`.
+- The owner approved the preview for publication from `main` on 16 November 2026.
 
 ## 2026-11-16 · Custom domain and repository rename
 
 - Renamed the GitHub repository to [`PengpeiZhu/pengpei-astro-website`](https://github.com/PengpeiZhu/pengpei-astro-website) and updated its website link.
 - Set `pengpeizhu.com` as the GitHub Pages custom domain. Cloudflare publishes four DNS-only A records for the root domain and a DNS-only `www` alias to `pengpeizhu.github.io`.
 - The production build uses the domain root and sets the HTTPS canonical URL from the GitHub Pages host. The root and project-path exports each verified 23 file references, including the CV and both labs. Automatic deployment still runs on pushes to `main`.
+- GitHub issued a certificate for `pengpeizhu.com` and `www.pengpeizhu.com`. Enabled HTTPS enforcement and verified that both HTTP addresses and the HTTPS `www` address redirect to `https://pengpeizhu.com/`.
 
 ## 2026-11-13 · Automatic GitHub Pages publishing
 
