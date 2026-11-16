@@ -2,6 +2,13 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-16 · Astrophotos gallery and fortnightly rotation
+
+- Added 27 photographs and updated three existing captions from the owner's Finder comments. Kept the two earlier photographs without comments, for 32 images in the gallery.
+- Showed four featured photos alongside a larger More photos panel with Previous and Next controls. The enlarged view supports arrow keys and Escape.
+- Set the featured selection to advance every 14 days from 16 November 2026 at 00:00 UTC. The published page calculates the current selection from the date.
+- Verified all 28 browsing pages, keyboard controls, the layout at desktop and phone widths, and a complete rotation through all 32 photos. Validated both the custom-domain and project-path exports.
+
 ## 2026-11-16 · Fra Angelico and SciX links
 
 - Linked Fra Angelico’s name in the opening credit to the supplied overview of his work at San Marco.

@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import { assetPath } from "../lib/site-path";
 import publications from "../lib/publications.json";
 import publicationSource from "../lib/publication-source.json";
-import photos from "../lib/photography.json";
 import { presentations } from "../lib/presentations";
+import { Astrophotos } from "./astrophotos";
 import { InteractiveProjects } from "./interactive-projects";
 import { useReadingProgress } from "../lib/use-reading-progress";
 const nav = [
@@ -35,12 +35,8 @@ const projects = [
 ];
 export default function Home(){
  const [menu,setMenu]=useState(false),[filter,setFilter]=useState("selected"),[query,setQuery]=useState(""),[year,setYear]=useState("all"),[notice,setNotice]=useState("");
- const dialog=useRef<HTMLDialogElement>(null),photoDialog=useRef<HTMLDialogElement>(null),menuButton=useRef<HTMLButtonElement>(null);
- const [photoIndex,setPhotoIndex]=useState(0);
+ const dialog=useRef<HTMLDialogElement>(null),menuButton=useRef<HTMLButtonElement>(null);
  const active=useReadingProgress(sectionIds);
- const photo=photos[photoIndex];
- function openPhoto(index:number){setPhotoIndex(index);photoDialog.current?.showModal()}
- function stepPhoto(direction:number){setPhotoIndex(index=>(index+direction+photos.length)%photos.length)}
  const matches=publications.filter(p=>(filter==="all"||(filter==="selected"&&p.selected)||(filter==="first"&&p.firstAuthor))&&(year==="all"||p.year===year)&&`${p.title} ${p.authors} ${p.journal} ${p.year} ${p.doi} ${p.arxiv} Pengpei Zhu`.toLowerCase().includes(query.toLowerCase().trim())).sort((a,b)=>filter==="selected"?0:a.scixOrder-b.scixOrder);
  useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(""),4000);return()=>clearTimeout(timer)},[notice]);
  async function copy(text:string,success:string){try{await navigator.clipboard.writeText(text);setNotice(success)}catch{setNotice("Copy is unavailable here. Select the text, or download the bibliography.")}}
@@ -137,7 +133,22 @@ export default function Home(){
      </ol>
    </div>
  </section>
- <section id="photography" data-reading-section className="section photography" aria-labelledby="photography-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>06</span>Astrophotos</p><span className="section-note">Under the same sky</span></div><div className="intro-grid"><SectionTitle section="photography">Astrophotos</SectionTitle><div className="intro-copy"><p className="lead">Looking up, beyond the spectra.</p><p>A selection of my recent astrophotography — star trails, interstellar dust, and quiet moments under the night sky. Select a photograph to take a closer look.</p></div></div><div className="photo-gallery">{photos.map((photo,i)=><figure className={`photo-card ${i===0?"featured-photo":""} ${photo.height>photo.width?"portrait-photo":""}`} key={photo.src}><button onClick={()=>openPhoto(i)} aria-label={`Enlarge ${photo.caption}`}><img src={assetPath(photo.src)} alt={photo.alt} width={photo.width} height={photo.height} loading="lazy"/><span className="photo-expand" aria-hidden="true">⤢</span></button><figcaption><span>{photo.caption}</span><time dateTime={photo.date}>{photo.displayDate}</time></figcaption></figure>)}</div><p className="photo-credit">Photographs by Pengpei Zhu <span lang="zh">朱芃佩</span></p></div></section>
+ <section id="photography" data-reading-section className="section photography" aria-labelledby="photography-title">
+   <div className="wrap">
+     <div className="section-header">
+       <p className="eyebrow"><span>06</span>Astrophotos</p>
+       <span className="section-note">Under the same sky</span>
+     </div>
+     <div className="intro-grid">
+       <SectionTitle section="photography">Astrophotos</SectionTitle>
+       <div className="intro-copy">
+         <p className="lead">Looking up, beyond the spectra.</p>
+         <p>The featured photos change every two weeks. Select any photo to take a closer look.</p>
+       </div>
+     </div>
+     <Astrophotos />
+   </div>
+ </section>
  <section data-reading-section id="cv" className="section cv-section" aria-labelledby="cv-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>07</span>Curriculum vitae</p><span className="section-note">A path through astronomy</span></div><div className="cv-layout"><div className="cv-intro"><SectionTitle section="cv">Curriculum<br/>vitae</SectionTitle><p>From astrophysics and philosophy at Santa Cruz to spectroscopy at Leiden and galaxy evolution at DAWN.</p><a className="button" href={assetPath(`/${cvFilename}`)} download={cvFilename}>Download full CV ↓</a><p className="download-note">PDF · 3 pages · Updated 16 November 2026</p></div><div className="cv-details"><h3 className="eyebrow">Education</h3><ol className="timeline"><li><span>2024 — present</span><div><h4>PhD in Astrophysics</h4><p>Cosmic Dawn Center · DTU Space</p><small>Supervisor: Francesco Valentino</small></div></li><li><span>2022 — 2024</span><div><h4>MSc in Astronomy</h4><p>Leiden University, the Netherlands</p><small>Astronomy Research programme</small></div></li><li><span>2017 — 2022</span><div><h4>BS in Physics &amp; BA in Philosophy</h4><p>University of California, Santa Cruz</p><small>Astrophysics and philosophy of science</small></div></li></ol><div className="cv-detail-columns"><div><h3 className="eyebrow">Recognition</h3><p><External href="https://www.universiteitleiden.nl/en/news/2024/11/several-leiden-science-students-excel-and-win-khmw-young-talent-awards">KHMW Young Talent Award <Arrow up/></External><small>Astronomy master’s thesis prize · 2024</small></p><p>UCSC Dean’s Scholarship<small>Undergraduate studies</small></p></div><div><h3 className="eyebrow">Community</h3><p>DTU Space PhD Committee<small>Member · 2026–2027</small></p><p>DAWN Summit 2025<small>Scientific Organizing Committee</small></p><p>Public observing at Leiden<small>L.A.D. “F. Kaiser” · 2022–2023</small></p></div></div></div></div></div></section>
  <section data-reading-section id="contact" className="section contact" aria-labelledby="contact-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>08</span>Contact</p><span className="section-note">Ideas are better shared</span></div><div className="contact-layout"><div><SectionTitle section="contact">Let’s talk<br/><em>about galaxies.</em></SectionTitle><p>For research discussions, collaborations, or questions about my work, the best way to reach me is by email.</p><div className="email-row"><a href={`mailto:${emailAddress}`}>{emailAddress} <Arrow up/></a><button onClick={()=>copy(emailAddress,"Email address copied.")} aria-label="Copy email address">Copy</button></div></div><div className="contact-institution"><span className="eyebrow">Based at</span><h3>Cosmic Dawn Center</h3><p>DTU Space<br/>Technical University of Denmark<br/>Kgs. Lyngby, Denmark</p><div className="contact-links"><External href="https://cosmicdawn.dk/staff/pengpei-zhu/">DAWN profile <Arrow up/></External><External href="https://orcid.org/0000-0002-6768-8335">ORCID <Arrow up/></External></div></div></div></div></section>
  <section id="visitors" data-reading-section className="section visitors" aria-labelledby="visitors-title">
@@ -171,6 +182,5 @@ export default function Home(){
    </a>
  )}
  <dialog ref={dialog} className="figure-dialog" aria-labelledby="figure-title" onClick={e=>{if(e.target===dialog.current)dialog.current.close()}}><div className="dialog-header"><h2 id="figure-title">DeepDive · Neutral gas outflows</h2><button autoFocus className="small-button" onClick={()=>dialog.current?.close()}>Close ×</button></div><img src={assetPath("/deepdive-outflows.png")}  alt="Expanded original DeepDive figure comparing star formation rate with stellar mass and gas velocity offset."/><p>Original figure from Zhu et al. (2026), Fig. 3. <External href={assetPath("/deepdive-outflows.png")} >Open full-resolution image <Arrow up/></External></p></dialog>
- <dialog ref={photoDialog} className="photo-dialog" aria-labelledby="photo-title" onClick={e=>{if(e.target===photoDialog.current)photoDialog.current.close()}} onKeyDown={e=>{if(e.key==="ArrowLeft"){e.preventDefault();stepPhoto(-1)}if(e.key==="ArrowRight"){e.preventDefault();stepPhoto(1)}}}><div className="dialog-header"><h2 id="photo-title">{photo.caption}</h2><button autoFocus className="small-button" onClick={()=>photoDialog.current?.close()}>Close ×</button></div><img src={assetPath(photo.src)} alt={photo.alt} width={photo.width} height={photo.height}/><div className="photo-dialog-footer"><button className="small-button" onClick={()=>stepPhoto(-1)} aria-label="Previous photograph">← Previous</button><p aria-live="polite">{photoIndex+1} / {photos.length} · {photo.displayDate}</p><button className="small-button" onClick={()=>stepPhoto(1)} aria-label="Next photograph">Next →</button></div></dialog>
 <div role="status" aria-live="polite" className={`toast ${notice?"visible":""}`}>{notice}</div></>;
 }

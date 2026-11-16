@@ -535,17 +535,43 @@ h3 { font-size: 31px; }
 .email-row button:hover { background: #9A452E; }
 .photography { background: #35404E; color: #F8EADE; --line: #F8EADE50; --muted: #F8EADE; }
 .photography .intro-grid { margin-bottom: 58px; }
-.photo-gallery { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 48px 32px; align-items: start; }
+.photo-gallery {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+  gap: clamp(26px, 3vw, 44px);
+  align-items: start;
+}
+.photo-gallery-heading { color: #FFFFD0; font-family: var(--serif); font-size: 30px; margin-bottom: 18px; }
+.photo-featured-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 22px; }
 .photo-card { min-width: 0; }
-.featured-photo { grid-column: span 2; }
-.photo-card:nth-child(2) { align-self: end; }
-.photo-card button { display: block; width: 100%; border: 0; background: transparent; padding: 0; position: relative; cursor: zoom-in; }
-.photo-card img { width: 100%; height: auto; }
+.photo-card button {
+  display: block;
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  border: 0;
+  background: #232D39;
+  padding: 0;
+  position: relative;
+  cursor: zoom-in;
+}
+.photo-card img { width: 100%; height: 100%; object-fit: contain; }
 .photo-card button:hover .photo-expand, .photo-card button:focus-visible .photo-expand { background: #FFFFD0; color: #35404E; }
 .photo-expand { position: absolute; right: 14px; bottom: 14px; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #35404EB3; color: #FFFFD0; font-size: 26px; transition: background .15s; }
-.photo-card figcaption { padding-top: 18px; font-size: 18px; line-height: 1.4; }
-.photo-card figcaption > span { display: block; }
-.photo-card time { display: block; color: #EBD2A6; font-size: 15px; margin-top: 8px; }
+.photo-card figcaption { padding-top: 12px; font-size: 18px; line-height: 1.4; }
+.photo-card time { display: block; color: #EBD2A6; font-size: 15px; margin-top: 5px; }
+.photo-browser { padding: clamp(14px, 1.6vw, 24px); background: #293544; border: 1px solid var(--line); }
+.photo-pagination {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.photo-pagination button { padding-inline: 10px; justify-self: start; white-space: nowrap; }
+.photo-pagination button:last-child { justify-self: end; }
+.photo-pagination button:hover { background: #4D6166; }
+.photo-pagination button:disabled { opacity: .5; cursor: default; }
+.photo-pagination > [role="status"] { color: #EBD2A6; font-size: 16px; font-variant-numeric: tabular-nums; }
 .photo-credit { font-size: 17px; color: #EBD2A6; margin-top: 40px; }
 .photo-credit [lang="zh"] { margin-left: 12px; letter-spacing: .1em; }
 .photography :focus-visible, .panels :focus-visible { outline-color: #FFED6B; }
@@ -622,8 +648,8 @@ h3 { font-size: 31px; }
   .contact { padding-bottom: 76px; }
   .contact h2 { font-size: 52px; }
   .contact-layout { gap: 46px; }
-  .photo-gallery { gap: 34px 24px; }
-  .photo-card figcaption { font-size: 17px; }
+  .photo-gallery { grid-template-columns: 1fr; gap: 32px; }
+  .photo-browser { width: min(100%, 580px); justify-self: center; }
   .visitor-layout { grid-template-columns: 1fr; gap: 32px; }
 }
 @media (max-width: 620px) {
@@ -695,10 +721,11 @@ h3 { font-size: 31px; }
   .panels .intro-grid { margin-bottom: 42px; }
   .contact { padding-bottom: 62px; }
   .email-row > a { font-size: 25px; }
-  .photo-gallery { grid-template-columns: 1fr 1fr; gap: 30px 20px; }
-  .featured-photo { grid-column: 1/-1; }
-  .photo-card:nth-child(2) { align-self: start; }
-  .photo-card figcaption { font-size: 16px; padding-top: 13px; }
+  .photography .intro-grid { margin-bottom: 38px; }
+  .photo-gallery-heading { font-size: 25px; margin-bottom: 14px; }
+  .photo-featured-grid { gap: 22px 14px; }
+  .photo-card figcaption { font-size: 16px; padding-top: 10px; }
+  .photo-pagination button, .photo-pagination > [role="status"] { font-size: 14px; }
   .photo-card time { font-size: 14px; }
   .photo-expand { width: 32px; height: 32px; right: 8px; bottom: 8px; font-size: 22px; }
   .photo-credit { font-size: 16px; }

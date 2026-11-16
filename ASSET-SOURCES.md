@@ -25,7 +25,11 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 
 ## Photographs
 
-All photographs are by Pengpei Zhu. The gallery contains five approved scenes captured on 19 February 2026, 1 September 2025, 26 August 2025, 21 August 2025 and 19 August 2025. Gallery copies preserve framing, pixels, colour profiles and watermarks, with EXIF/XMP removed during the original website preparation. The hero photograph is the exact owner-selected Milky Way image, originally named `841891B8-CDB1-4740-BF61-4A57336F96B3_1_102_a.jpeg`. The selected website images were copied byte-for-byte for this repository. Two temporary photograph-selection contact sheets were excluded from the GitHub package; they are not used by the website.
+All photographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder. Three already appeared in the gallery and now use captions based on their comments. The other two previously published photos retain their captions, for a total of 32 photographs. Capture dates come from EXIF DateTimeOriginal where available.
+
+New web copies were made with lossless JPEG optimisation. Decoded pixels, colour profiles, framing and visible watermarks were preserved. EXIF (including GPS), XMP, IPTC and other JPEG comments were excluded. Captions and alternative descriptions are in `lib/photography.json`; reviewed file hashes are in `docs/assets-sha256.json`. The hero is the separately selected Milky Way image originally named `841891B8-CDB1-4740-BF61-4A57336F96B3_1_102_a.jpeg`.
+
+Official names used in captions were checked with the [Royal House of Denmark](https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/the-hermitage-palace/), the [Observatories of the Canary Islands](https://ocan.iac.es/), the [Cherenkov Telescope Array Observatory](https://www.ctao.org/emission-to-discovery/array-sites/ctao-north/) and [NASA’s Center for Near-Earth Object Studies](https://cneos.jpl.nasa.gov/news/news181a.html).
 
 ## Interactive scientific pages
 

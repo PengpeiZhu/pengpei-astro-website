@@ -6,9 +6,11 @@ const root = resolve("out");
 const basePath = (process.env.NEXT_PUBLIC_BASE_PATH ?? "").replace(/\/+$/, "");
 const html = readFileSync(resolve(root, "index.html"), "utf8");
 const papers = JSON.parse(readFileSync("lib/publications.json", "utf8"));
+const photos = JSON.parse(readFileSync("lib/photography.json", "utf8"));
 assert(html.includes(`All publications · ${papers.length}`), "Export has stale publication count.");
 const urls = [...html.matchAll(/(?:src|href)="([^"]+)"/g)].map(match => match[1]);
 urls.push(`${basePath}/photography/hero-milky-way.jpeg`, `${basePath}/interactive/uvj-sed-lab.html`, `${basePath}/interactive/sandage-sfh.html`);
+urls.push(...photos.map(photo => `${basePath}${photo.src}`));
 let checked = 0;
 for (let url of new Set(urls)) {
   if (/^(?:[a-z][a-z\d+.-]*:|#|\/\/)/i.test(url)) continue;

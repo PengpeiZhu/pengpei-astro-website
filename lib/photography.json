@@ -1,12 +1,247 @@
 [
   {
+    "src": "/photography/hermitage-star-trails.jpg",
+    "caption": "Star trails over the Hermitage Palace in Lyngby, Denmark",
+    "alt": "Star trails arc across a blue night sky above the illuminated palace at the end of a path.",
+    "width": 1448,
+    "height": 2172
+  },
+  {
+    "src": "/photography/colour-and-dust.jpg",
+    "caption": "“The Sky Palette” around Antares",
+    "alt": "Blue, gold and red clouds and dark dust set among a crowded field of stars.",
+    "width": 1050,
+    "height": 746,
+    "date": "2025-08-26",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/milky-way-over-roque-de-los-muchachos.jpg",
+    "caption": "The Milky Way above Roque de los Muchachos",
+    "alt": "A bright band of the Milky Way rises diagonally over a rocky ridge.",
+    "width": 2042,
+    "height": 1539,
+    "date": "2025-08-18",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/m81-m82.jpg",
+    "caption": "Bode’s Galaxy (M81) and the Cigar Galaxy (M82)",
+    "alt": "Two galaxies stand out among the stars, one with a bright spiral centre and the other a narrow streak.",
+    "width": 1092,
+    "height": 718
+  },
+  {
     "src": "/photography/star-trails-observatory.jpg",
-    "caption": "Star trails above an observatory dome",
+    "caption": "Star trails at DTU Space",
     "alt": "Curving star trails across a blue sky above a small observatory dome and leafless branches.",
     "width": 1086,
     "height": 724,
     "date": "2026-02-19",
     "displayDate": "February 2026"
+  },
+  {
+    "src": "/photography/meteors-by-nordic-optical-telescope.jpg",
+    "caption": "Shooting stars beside the Nordic Optical Telescope",
+    "alt": "A short streak of light in a star-filled sky to the left of a telescope dome.",
+    "width": 988,
+    "height": 795,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/rosette-nebula.jpg",
+    "caption": "The Rosette Nebula",
+    "alt": "A ring of red glowing gas with a dark centre set against a dense field of stars.",
+    "width": 1040,
+    "height": 753
+  },
+  {
+    "src": "/photography/telescope-under-stars.jpg",
+    "caption": "LST-2 under construction beneath the Milky Way and airglow",
+    "alt": "A skeletal telescope dish silhouetted below a star field and a band of green airglow.",
+    "width": 741,
+    "height": 1058,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/leiden-old-observatory-star-trails.jpg",
+    "caption": "Star trails over Leiden’s Old Observatory",
+    "alt": "Concentric star trails above the lit Old Observatory and trees in Leiden.",
+    "width": 1046,
+    "height": 751
+  },
+  {
+    "src": "/photography/winter-milky-way-and-andromeda.jpg",
+    "caption": "The winter Milky Way and the Andromeda Galaxy (M31)",
+    "alt": "The Milky Way crosses a wide star field, with the bright oval of Andromeda off to one side.",
+    "width": 1082,
+    "height": 724
+  },
+  {
+    "src": "/photography/gran-telescopio-canarias-dome-opening.jpg",
+    "caption": "The Gran Telescopio Canarias opens its dome",
+    "alt": "A distant telescope dome sits on a dark ridge beneath a wide, faintly starry sky.",
+    "width": 752,
+    "height": 1042,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/under-the-calima-and-milky-way.jpg",
+    "caption": "Beneath the calima and the Milky Way",
+    "alt": "Pengpei in a red jacket sits on a rock under the Milky Way and an orange haze.",
+    "width": 692,
+    "height": 1134,
+    "date": "2025-08-17",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/milky-way-near-cygnus.jpg",
+    "caption": "The Milky Way near Cygnus",
+    "alt": "Pink clouds and dark dust trace a diagonal band through a dense field of stars.",
+    "width": 1106,
+    "height": 710
+  },
+  {
+    "src": "/photography/big-dipper-inderbredningen.jpg",
+    "caption": "The Big Dipper reflected in Inderbredningen, the inner Roskilde Fjord",
+    "alt": "Faint stars reflect in still water, with a line of shore lights across the horizon.",
+    "width": 768,
+    "height": 1022
+  },
+  {
+    "src": "/photography/nordic-optical-telescope-dome-opening.jpg",
+    "caption": "The Nordic Optical Telescope opens its dome",
+    "alt": "A telescope dome with a lit opening beneath a narrow band of the Milky Way.",
+    "width": 724,
+    "height": 1086,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/rosette-and-christmas-tree.jpg",
+    "caption": "The Rosette Nebula and the nebula around the Christmas Tree Cluster",
+    "alt": "Two glowing pink nebulae separated by a dark band in a dense field of stars.",
+    "width": 1084,
+    "height": 724
+  },
+  {
+    "src": "/photography/orion-h-alpha.jpg",
+    "caption": "The Orion region through a 7 nm Hα filter",
+    "alt": "A black-and-white view of Orion with bright nebulae, a broad arc and dense pinpoints of light.",
+    "width": 792,
+    "height": 990
+  },
+  {
+    "src": "/photography/galileo-telescope-milky-way-airglow.jpg",
+    "caption": "The Milky Way’s centre and airglow over the Telescopio Nazionale Galileo",
+    "alt": "The Milky Way rises above a silhouetted ridge and a distant dome, with green airglow near the horizon.",
+    "width": 742,
+    "height": 1056,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/lst-2-green-airglow.jpg",
+    "caption": "The Milky Way and green airglow behind LST-2",
+    "alt": "The open framework of a telescope dish and support tower silhouetted against a green-tinged star field.",
+    "width": 1096,
+    "height": 717,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/nordic-optical-telescope-observing-crew.jpg",
+    "caption": "The Nordic Optical Telescope observing crew under the Milky Way",
+    "alt": "A group of observers stands on red-lit ground beneath the Milky Way and an orange horizon.",
+    "width": 1086,
+    "height": 724,
+    "date": "2025-08-17",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/elephant-trunk-nebula-region.jpg",
+    "caption": "The region around the Elephant’s Trunk Nebula",
+    "alt": "A broad star field with patches of red emission and a dark dusty lane.",
+    "width": 1084,
+    "height": 724
+  },
+  {
+    "src": "/photography/calima-over-canary-islands-telescopes.jpg",
+    "caption": "The Milky Way’s centre above the Gran Telescopio Canarias and Telescopio Nazionale Galileo during a calima",
+    "alt": "The bright Milky Way rises over a row of silhouettes and a hazy orange horizon.",
+    "width": 1058,
+    "height": 741,
+    "date": "2025-08-16",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/milky-way-between-the-roque-rocks.jpg",
+    "caption": "The Milky Way between the rocks at Roque de los Muchachos",
+    "alt": "Two jagged rock formations frame the Milky Way in a narrow gap.",
+    "width": 733,
+    "height": 1068,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/comet-catalina.jpg",
+    "caption": "Comet C/2013 US10 (Catalina)",
+    "alt": "A comet with a bright green centre and wispy tails against a black star field.",
+    "width": 928,
+    "height": 845
+  },
+  {
+    "src": "/photography/winter-milky-way-through-the-not-antenna.jpg",
+    "caption": "The winter Milky Way through the Nordic Optical Telescope’s antenna structure",
+    "alt": "Two antenna towers rise in silhouette in front of a vertical band of stars.",
+    "width": 729,
+    "height": 1076,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/starlight-reflected-in-lst-1.jpg",
+    "caption": "Starlight reflected in the mirrors of LST-1",
+    "alt": "The starry sky reflects in the blue mirror facets of a large telescope dish.",
+    "width": 1018,
+    "height": 771,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/star-trails-at-uc-santa-cruz.jpg",
+    "caption": "Taking star-trail photos at the UC Santa Cruz entrance, where police stopped me",
+    "alt": "Magenta and white lights flare across a star-trail exposure at the entrance to UC Santa Cruz.",
+    "width": 1086,
+    "height": 724
+  },
+  {
+    "src": "/photography/gtc-atlantic-sunset.jpg",
+    "caption": "Stars above the Gran Telescopio Canarias at sunset over the Atlantic",
+    "alt": "A thin orange band lights the Atlantic horizon beneath a twilight sky and above a distant dome.",
+    "width": 756,
+    "height": 1038,
+    "date": "2025-08-18",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/winter-milky-way-over-the-observatory.jpg",
+    "caption": "The winter Milky Way and Andromeda above the William Herschel, Isaac Newton and Swedish Solar telescopes",
+    "alt": "A vertical band of the Milky Way over several telescope domes along a ridge.",
+    "width": 746,
+    "height": 1054,
+    "date": "2025-08-19",
+    "displayDate": "August 2025"
+  },
+  {
+    "src": "/photography/high-school-astrophotography-setup.jpg",
+    "caption": "The astrophotography setup I used in high school",
+    "alt": "An older telescope on an equatorial mount and tripod next to an open laptop.",
+    "width": 720,
+    "height": 960
   },
   {
     "src": "/photography/star-field-dust-lanes.jpg",
@@ -18,30 +253,12 @@
     "displayDate": "September 2025"
   },
   {
-    "src": "/photography/colour-and-dust.jpg",
-    "caption": "Colour and dust among the stars",
-    "alt": "Blue, gold and red clouds and dark dust set among a crowded field of stars.",
-    "width": 1050,
-    "height": 746,
-    "date": "2025-08-26",
-    "displayDate": "August 2025"
-  },
-  {
     "src": "/photography/twilight-ridge.jpg",
     "caption": "Twilight above the ridge",
     "alt": "A pale twilight sky with bright points and a slender crescent above a dark ridge and antenna mast.",
     "width": 768,
     "height": 1024,
     "date": "2025-08-21",
-    "displayDate": "August 2025"
-  },
-  {
-    "src": "/photography/telescope-under-stars.jpg",
-    "caption": "A telescope beneath the stars",
-    "alt": "A large telescope dish silhouetted beneath a dense star field.",
-    "width": 741,
-    "height": 1058,
-    "date": "2025-08-19",
     "displayDate": "August 2025"
   }
 ]
