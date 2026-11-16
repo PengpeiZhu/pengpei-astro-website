@@ -61,7 +61,7 @@ The count and year menu are derived from the data. The two additions are [SQuIGG
 
 After editing publication data, run `npm run bibliography` to regenerate the downloadable BibTeX file. Update the dated SciX match and affected checksum when intentionally changing the verified list. `npm run check` detects duplicate records, mismatched membership, stale bibliography downloads and changed assets.
 
-The downloadable CV is the owner's **three-page PDF supplied on 12 November 2026**, with 19 papers. The supplied document is preserved unchanged, served at the stable `Pengpei-Zhu-CV.pdf` download path.
+The downloadable CV is the owner's **three-page PDF supplied on 16 November 2026**, with 19 papers. The supplied document is preserved unchanged, served at the stable `Pengpei-Zhu-CV.pdf` download path.
 
 ## GitHub Pages
 
@@ -82,4 +82,4 @@ The workflow follows [GitHub's custom Pages workflow documentation](https://docs
 
 ## Preserved placeholders and credits
 
-The metallicity explorer, presentation media and visitor map remain placeholders. No visitor tracking has been installed. UVJ + SED and Sandage SFH are fully included. See [ASSET-SOURCES.md](ASSET-SOURCES.md) for provenance and [RIGHTS.md](RIGHTS.md) for attribution and reuse notes.
+The metallicity explorer and presentation media remain placeholders. UVJ + SED and Sandage SFH are fully included. The Visitors section loads the owner's MapMyVisitors embed. See [ASSET-SOURCES.md](ASSET-SOURCES.md) for provenance and [RIGHTS.md](RIGHTS.md) for attribution and reuse notes.

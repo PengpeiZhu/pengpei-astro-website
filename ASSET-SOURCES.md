@@ -5,7 +5,7 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 ## Academic content
 
 - Biography, education and presentations: the owner's CV and cover-letter context used for the original website. Those private source documents and chat transcripts are not packaged.
-- CV download: the owner's three-page `PengpeiZhu_Europass_CV.pdf`, supplied on 12 November 2026, copied unchanged to `public/Pengpei-Zhu-CV.pdf`. SHA-256: `cd84e3b769ac7bd28cd93b5e271baa19fa2bbbb8aa050d4b00bf98bac563459c`.
+- The owner supplied `PengpeiZhu_CV.pdf` on 16 November 2026. The three-page CV is served unchanged at `public/Pengpei-Zhu-CV.pdf`. Its SHA-256 is `7764e4061fc826b657358be8380c556a6230b50053459b39e1507f9e29b07243`.
 - Institutional profile: https://cosmicdawn.dk/staff/pengpei-zhu/
 - ORCID: https://orcid.org/0000-0002-6768-8335
 - Publications: all 19 results from the existing SciX query, checked on 12 November 2026. Exact query: `lib/publication-source.json`; individual matching records: `docs/scix-matches.json`.
@@ -19,7 +19,7 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 - DTU logo: https://media.adm.dtu.dk/designguide/DTU_Design_Guide_Pro_User/DTU_Design_Guide_Logo/Corporate_Red/Corp_Red_RGB/Corp_Red_RGB.png
 - DAWN logo: https://cosmicdawn.dk/wp-content/uploads/2020/11/DAWNlogo_1625x375.png
 - Transparent source assets retain their proportions and are presented in white with CSS, with a thin border/divider over the Milky Way.
-- Colour family: owner's San Marco palette. The selected values are contained in `app/globals.css`; no private palette folder is required at runtime.
+- The owner's San Marco palette draws on Fra Angelico's paintings in Florence. The selected values are in `app/globals.css`, and the opening section credits the artist. [Museo di San Marco](https://museitoscana.cultura.gov.it/luoghi_della_cultura/museo_di_san_marco/)
 - Page/index/progress inspiration: https://www.carlsbergfondet.dk/en/applicant/conferences/
 - Research, presentations and photography organization references: https://jiaxuanli.me/research/ , https://jiaxuanli.me/talks/ , https://jiaxuanli.me/miscellany/photography/ . Only the owner's content/photos are included.
 
@@ -32,7 +32,8 @@ All photographs are by Pengpei Zhu. The gallery contains five approved scenes ca
 - `public/interactive/uvj-sed-lab.html`: owner's UVJ + SED Lab. Scientific basis: Suess, Kriek, Price & Barro (2021), ApJ 915, 87, https://doi.org/10.3847/1538-4357/abf1e4 . Source figures, filter definitions and photometry conventions are credited inside the lab.
 - `public/interactive/sandage-sfh.html`: owner's Sandage SFH lab. Uses the Sandage `t exp(−t²/2τ²)` form and embedded Planck18 age table. Original scientific assumptions, limits, provenance and sources are retained inside the page.
 - Both standalone files preserve their embedded data and scripts. No remote script or data download is needed for the labs. Checksums are in `docs/assets-sha256.json`.
-- Metallicity and MapMyVisitors are placeholders. There is no visitor-tracking script.
+- Metallicity remains a placeholder.
+- The owner supplied the MapMyVisitors embed on 16 November 2026. The sandboxed `public/visitor-map.html` loads the original script over HTTPS with its supplied widget key, colour and width. [MapMyVisitors](https://mapmyvisitors.com/)
 
 ## Build references
 

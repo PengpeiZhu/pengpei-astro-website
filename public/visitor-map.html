@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visitor map</title>
+  <style>
+    body { margin: 0; overflow: hidden; color: #35404e; font: 16px/1.5 Arial, sans-serif; }
+    .map-fallback { padding: 16px; text-align: center; }
+    #mapmyvisitors-widget ~ .map-fallback { display: none; }
+    /* The provider sets pixel dimensions when the map initially loads. */
+    #mapmyvisitors-widget, .mapmyvisitors-map { width: 100% !important; }
+    .mapmyvisitors-map { height: auto !important; aspect-ratio: 2.04; background-size: 100% 100%; }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" id="mapmyvisitors" src="https://mapmyvisitors.com/map.js?d=sZ1Ybhkt-pC2YiDKAUntyTGkqSNK52HW8Vul04z1tUY&amp;cl=ffffff&amp;w=a"></script>
+  <p class="map-fallback">The visitor map is provided by MapMyVisitors.</p>
+</body>
+</html>

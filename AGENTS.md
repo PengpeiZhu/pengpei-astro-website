@@ -29,10 +29,10 @@ GitHub Pages builds and deploys automatically on pushes to `main`. Use the manua
 - Name: Pengpei Zhu, 朱芃佩. Contact: `penzhu@space.dtu.dk`. ORCID: `0000-0002-6768-8335`.
 - Academic biography and education were sourced from the owner's CV and latest cover letter. Do not invent roles, awards, publications or dates.
 - Top links: A little about me; My research; Fun Interactive projects; Astrophotos.
-- Order: About, Research, Publications, Interactive projects, Talks & Posters, Astrophotos, CV, Contact, visitor-map placeholder.
+- Order: About, Research, Publications, Interactive projects, Talks & Posters, Astrophotos, CV, Contact, Visitors.
 - The Milky Way photograph is the hero background. Keep the smaller portrait, visible Chinese name, and compact email/CV/Contact block beneath the portrait.
 - DAWN and DTU logos are transparent, rendered white with thin white dividing lines over the hero image.
-- Preserve the San Marco palette, large readable body text, slightly smaller headings, contrasting section backgrounds and title/index reading-progress bars.
+- Preserve the San Marco palette and the opening credit to Fra Angelico. Keep large readable body text, contrasting section backgrounds, the reading progress bars and the back-to-top control.
 - Research topics have separate headings, anchors and generous spacing. Maintain the scientific figure, caption, uncertainties and attribution.
 - Keep keyboard-accessible navigation, visible focus, dialog Escape support, descriptive alternatives and mobile layout.
 
@@ -42,7 +42,7 @@ GitHub Pages builds and deploys automatically on pushes to `main`. Use the manua
 
 Verify authorship and publication status against SciX and original journal/arXiv records before changing metadata. Do not label all entries peer reviewed. Preserve the selected/first-author flags unless requested. The All filter follows `scixOrder`; update that order when refreshing the SciX snapshot. Run `npm run bibliography` after changing citations so `public/publications.bib` stays synchronized. Keep the full author lists in BibTeX, even when the page abbreviates them.
 
-The current CV PDF is the owner's three-page `PengpeiZhu_Europass_CV.pdf`, supplied on 12 November 2026 with 19 papers. It is served unchanged as `public/Pengpei-Zhu-CV.pdf` so existing download links remain stable. Preserve its bytes, and only replace it when the owner supplies or requests a new version. Website bibliography updates do not authorize editing the PDF or its original source.
+The current CV PDF is the owner's three-page `PengpeiZhu_CV.pdf`, supplied on 16 November 2026 with 19 papers. It is served unchanged as `public/Pengpei-Zhu-CV.pdf` so existing download links remain stable. Preserve its bytes, and only replace it when the owner supplies or requests a new version. Website bibliography updates do not authorize editing the PDF or its original source.
 
 ## Interactive labs
 
@@ -52,6 +52,8 @@ The current CV PDF is the owner's three-page `PengpeiZhu_Europass_CV.pdf`, suppl
 
 ## Media and provenance
 
-All runtime assets are in `public/`. The five gallery photos have no visible people, preserve the owner's framing/watermarks, and use approved captions. Preserve original image bytes unless an edit is requested. The owner selected the hero image separately. Slides/posters and visitor tracking are intentionally unfilled; do not fabricate talk titles or visitor counts.
+All runtime assets are in `public/`. The five gallery photos have no visible people, preserve the owner's framing and watermarks, and use approved captions. Preserve original image bytes unless an edit is requested. The owner selected the hero image separately. Slides and posters remain placeholders.
+
+The Visitors section embeds the owner's MapMyVisitors widget from `public/visitor-map.html`. Keep its script isolated in the sandboxed frame and retain the provider credit. The widget supplies the visitor data.
 
 `ASSET-SOURCES.md` records credits. `docs/assets-sha256.json` records the reviewed bytes. If an authorized asset update changes a hash, document it and update the manifest deliberately. Never just refresh every hash to hide unexpected differences. No blanket open-source licence has been selected; preserve third-party notices.

@@ -2,6 +2,14 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-16 · Visitor map, updated CV and homepage navigation
+
+- Replaced the visitor placeholder with the owner's MapMyVisitors widget in a sandboxed frame.
+- Updated the download to the supplied three-page `PengpeiZhu_CV.pdf` at the existing address. The site's CV section now shows 16 November 2026.
+- Added a floating **Back to top** control and credited Fra Angelico's paintings at the San Marco monastery in the opening section.
+- The local preview loaded the map at desktop and mobile widths. The return control worked by keyboard and by clicking, and the served PDF matched the supplied file byte for byte.
+- Prepared for owner review in a local branch before merging to `main`.
+
 ## 2026-11-16 · Custom domain and repository rename
 
 - Renamed the GitHub repository to [`PengpeiZhu/pengpei-astro-website`](https://github.com/PengpeiZhu/pengpei-astro-website) and updated its website link.
