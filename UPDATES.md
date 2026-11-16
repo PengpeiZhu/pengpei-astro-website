@@ -2,6 +2,11 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-16 · Featured photo sizing
+
+- Sized each featured frame to its photo’s original proportions and staggered the two columns to accommodate portrait and landscape images.
+- Verified edge-to-edge rendering at desktop and phone widths, along with the enlarged view and gallery pagination.
+
 ## 2026-11-16 · Astrophotos gallery and fortnightly rotation
 
 - Added 27 photographs and updated three existing captions from the owner's Finder comments. Kept the two earlier photographs without comments, for 32 images in the gallery.

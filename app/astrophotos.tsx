@@ -73,7 +73,7 @@ export function Astrophotos() {
       <div className="photo-gallery">
         <div>
           <h3 className="photo-gallery-heading">Featured photos</h3>
-          <div className="photo-featured-grid">
+          <div className="photo-featured">
             {featured.map(photo => (
               <PhotoCard key={photo.src} photo={photo} onOpen={() => openPhoto(photo)} />
             ))}

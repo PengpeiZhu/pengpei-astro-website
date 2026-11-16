@@ -542,24 +542,26 @@ h3 { font-size: 31px; }
   align-items: start;
 }
 .photo-gallery-heading { color: #FFFFD0; font-family: var(--serif); font-size: 30px; margin-bottom: 18px; }
-.photo-featured-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px 22px; }
+.photo-featured { columns: 2; column-gap: 22px; }
+.photo-featured .photo-card { break-inside: avoid; margin-bottom: 30px; }
 .photo-card { min-width: 0; }
 .photo-card button {
   display: block;
   width: 100%;
-  aspect-ratio: 5 / 4;
   border: 0;
-  background: #232D39;
+  background: transparent;
   padding: 0;
   position: relative;
   cursor: zoom-in;
 }
-.photo-card img { width: 100%; height: 100%; object-fit: contain; }
+.photo-card img { width: 100%; height: auto; }
 .photo-card button:hover .photo-expand, .photo-card button:focus-visible .photo-expand { background: #FFFFD0; color: #35404E; }
 .photo-expand { position: absolute; right: 14px; bottom: 14px; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: #35404EB3; color: #FFFFD0; font-size: 26px; transition: background .15s; }
 .photo-card figcaption { padding-top: 12px; font-size: 18px; line-height: 1.4; }
 .photo-card time { display: block; color: #EBD2A6; font-size: 15px; margin-top: 5px; }
 .photo-browser { padding: clamp(14px, 1.6vw, 24px); background: #293544; border: 1px solid var(--line); }
+.photo-browser .photo-card button { aspect-ratio: 5 / 4; background: #232D39; }
+.photo-browser .photo-card img { height: 100%; object-fit: contain; }
 .photo-pagination {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
@@ -723,7 +725,8 @@ h3 { font-size: 31px; }
   .email-row > a { font-size: 25px; }
   .photography .intro-grid { margin-bottom: 38px; }
   .photo-gallery-heading { font-size: 25px; margin-bottom: 14px; }
-  .photo-featured-grid { gap: 22px 14px; }
+  .photo-featured { column-gap: 14px; }
+  .photo-featured .photo-card { margin-bottom: 22px; }
   .photo-card figcaption { font-size: 16px; padding-top: 10px; }
   .photo-pagination button, .photo-pagination > [role="status"] { font-size: 14px; }
   .photo-card time { font-size: 14px; }
