@@ -2,6 +2,12 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-16 · Fra Angelico and SciX links
+
+- Linked Fra Angelico’s name in the opening credit to the supplied overview of his work at San Marco.
+- Underlined the SciX publication link and gave it the San Marco terracotta colour to make it easier to recognise.
+- Verified the link styling at desktop and phone widths, including visible keyboard focus on the SciX link.
+
 ## 2026-11-16 · Visitor map, updated CV and homepage navigation
 
 - Replaced the visitor placeholder with the owner's MapMyVisitors widget in a sandboxed frame.

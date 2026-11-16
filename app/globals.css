@@ -414,6 +414,8 @@ h3 { font-size: 31px; }
 .hero-description { color: #F8EADE; }
 .hero-palette-credit { max-width: 47rem; margin-top: 17px; color: #F8EADE; font-size: 16px; line-height: 1.55; }
 .hero-palette-credit strong { color: #FFED6B; font-weight: 600; }
+.hero-palette-credit a { color: inherit; text-underline-offset: .18em; }
+.hero-palette-credit a:hover { text-decoration-thickness: 2px; }
 .hero-aside {
   --portrait-width: 242px;
   display: flex;
@@ -511,8 +513,10 @@ h3 { font-size: 31px; }
 .publications-heading h2 { font-size: clamp(38px,3.5vw,58px); }
 .scix-link { display: flex; justify-content: space-between; align-items: center; gap: 32px; padding: 32px 0 30px; margin-top: 46px; border-block: 1px solid var(--ink); text-decoration: none; font-family: var(--serif); font-size: clamp(30px,3.2vw,48px); line-height: 1.2; }
 .scix-link small { font-family: var(--sans); font-size: 15px; letter-spacing: .08em; text-transform: uppercase; display: block; margin-bottom: 12px; }
+.scix-link-title { color: var(--rust); text-decoration: underline; text-decoration-thickness: .06em; text-underline-offset: .16em; }
 .scix-link > span:last-child { display: grid; place-items: center; width: 70px; height: 70px; border: 1px solid currentColor; border-radius: 50%; flex-shrink: 0; font-family: var(--sans); font-size: 38px; }
 .scix-link:hover { color: var(--rust); }
+.scix-link:hover .scix-link-title, .scix-link:focus-visible .scix-link-title { text-decoration-thickness: .1em; }
 .scix-note { font-size: 17px; margin-top: 18px; color: var(--muted); }
 .publication-controls { margin-top: 40px; }
 .filter-buttons button:hover:not([aria-pressed="true"]) { background: #F8EADE; }
