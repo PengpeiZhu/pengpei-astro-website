@@ -37,7 +37,8 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
-          NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.origin }}
+          # GitHub may report an HTTP origin while issuing a new certificate.
+          NEXT_PUBLIC_SITE_URL: https://${{ steps.pages.outputs.host }}
           NEXT_TELEMETRY_DISABLED: "1"
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v4

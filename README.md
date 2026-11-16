@@ -2,7 +2,7 @@
 
 Pengpei's personal academic website for Pengpei Zhu (朱芃佩), with research, publications, interactive astronomy labs, talks and posters, astrophotographs, a downloadable CV, and contact information.
 
-This website includes **19 publications and preprints**, matched to the existing SciX search. The website is published at **[pengpeizhu.github.io/pengpei-astronomy](https://pengpeizhu.github.io/pengpei-astronomy/)**, with source in the public [PengpeiZhu/pengpei-astronomy repository](https://github.com/PengpeiZhu/pengpei-astronomy). Feature and maintenance history is recorded in [UPDATES.md](UPDATES.md).
+This website includes **19 publications and preprints**, matched to the existing SciX search. Visit the site at **[pengpeizhu.com](https://pengpeizhu.com/)**. The source is in the public [PengpeiZhu/pengpei-astro-website repository](https://github.com/PengpeiZhu/pengpei-astro-website). Feature and maintenance history is recorded in [UPDATES.md](UPDATES.md).
 
 ## Review locally
 
@@ -67,16 +67,16 @@ The downloadable CV is the owner's **three-page PDF supplied on 12 November 2026
 
 Push changes to `main` or merge a pull request into `main` to publish an update. GitHub Actions checks the content and types, verifies the static export, and publishes the build to GitHub Pages. Check the run under **Actions → Publish website to GitHub Pages**. To redeploy on demand, choose **Run workflow** and select `main`.
 
-**Settings → Pages → Source** is configured as **GitHub Actions**. The workflow reads the actual Pages URL and configures the public asset prefix and sharing metadata automatically, including the current `/pengpei-astronomy/` project path.
+**Settings → Pages → Source** is configured as **GitHub Actions**, with `pengpeizhu.com` as the custom domain. Cloudflare DNS points that domain to GitHub Pages. The workflow reads the Pages URL and configures the public asset prefix and sharing metadata. The custom domain serves the site at `/`.
 
-To test a project path locally:
+To preview a build with the production domain in sharing metadata:
 
 ```sh
-NEXT_PUBLIC_BASE_PATH=/pengpei-astronomy NEXT_PUBLIC_SITE_URL=https://example.github.io npm run build
+NEXT_PUBLIC_BASE_PATH='' NEXT_PUBLIC_SITE_URL=https://pengpeizhu.com npm run build
 npm run preview
 ```
 
-The preview server reads the build's base path and prints the matching address. Run `npm run build` without those variables to return to a domain-root build. Optional `.env.local` settings can be based on `.env.example` and are ignored by Git. `NEXT_PUBLIC_SITE_URL` is the origin only; the path goes in `NEXT_PUBLIC_BASE_PATH`.
+The preview server reads the build's base path and prints the matching local address. Optional `.env.local` settings can be based on `.env.example` and are ignored by Git. Set `NEXT_PUBLIC_SITE_URL` to the origin and `NEXT_PUBLIC_BASE_PATH` to the project path when testing a prefixed deployment.
 
 The workflow follows [GitHub's custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages) and [Next.js static export support](https://nextjs.org/docs/app/guides/static-exports). See [UPDATES.md](UPDATES.md) for publication and validation records.
 

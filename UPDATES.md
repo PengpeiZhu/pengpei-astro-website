@@ -2,6 +2,12 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-16 · Custom domain and repository rename
+
+- Renamed the GitHub repository to [`PengpeiZhu/pengpei-astro-website`](https://github.com/PengpeiZhu/pengpei-astro-website) and updated its website link.
+- Set `pengpeizhu.com` as the GitHub Pages custom domain. Cloudflare publishes four DNS-only A records for the root domain and a DNS-only `www` alias to `pengpeizhu.github.io`.
+- The production build uses the domain root and sets the HTTPS canonical URL from the GitHub Pages host. The root and project-path exports each verified 23 file references, including the CV and both labs. Automatic deployment still runs on pushes to `main`.
+
 ## 2026-11-13 · Automatic GitHub Pages publishing
 
 - A push or pull request merge into `main` now starts the GitHub Pages workflow automatically.
