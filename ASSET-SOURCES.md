@@ -30,7 +30,7 @@ The owner supplied the current profile portrait on 17 November 2026. Its web cop
 
 The owner supplied the annotated archery photo on 17 November 2026. Its web copy at `public/archery-lagrange-points.jpg` preserves the framing, decoded pixels, sRGB profile and labels.
 
-The astrophotographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder. Three already appeared in the gallery and now use captions based on their comments. The other two previously published photos retain their captions, for a total of 32 photographs. Capture dates come from EXIF DateTimeOriginal where available.
+The astrophotographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder, alongside two earlier photographs. On 17 November, the owner removed “Twilight above the ridge” and supplied the caption “Center of the Milky Way at La Palma” and the month August 2025 for the earlier Milky Way photograph. The gallery now contains 31 images. Other capture dates come from EXIF DateTimeOriginal where available.
 
 New web copies were made with lossless JPEG optimisation. Decoded pixels, colour profiles, framing and visible watermarks were preserved. EXIF (including GPS), XMP, IPTC and other JPEG comments were excluded. Captions and alternative descriptions are in `lib/photography.json`; reviewed file hashes are in `docs/assets-sha256.json`. The hero is the separately selected Milky Way image originally named `841891B8-CDB1-4740-BF61-4A57336F96B3_1_102_a.jpeg`.
 

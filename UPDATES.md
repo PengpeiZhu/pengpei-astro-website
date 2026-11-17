@@ -2,6 +2,15 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Research layout, photo sizes and contact details
+
+- Put Research text and figure previews in a narrower single column and moved the SciX link directly beneath the Publications title.
+- Enlarged the homepage portrait slightly, reduced the archery photo and removed the requested introductory copy from About, Publications, Astrophotos, CV, Contact and Visitors.
+- Renamed the Milky Way photo and dated it August 2025. Removed “Twilight above the ridge,” leaving 31 gallery photos.
+- Added the office address and links to LinkedIn, Google Scholar and DTU Orbit in Contact.
+- Added a crawlable sitemap for the homepage and two interactive labs, referenced from `robots.txt`.
+- Verified the layout at desktop and narrow phone widths, the gallery rotation and August date, and both static export paths.
+
 ## 2026-11-17 · Compact research figures and job-search badge
 
 - Replaced SQuIGGLE Figure 1 with Figure 3 and removed the DeepDive figure captioned “Neutral gas in galaxies with little star formation.”

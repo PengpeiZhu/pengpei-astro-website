@@ -245,20 +245,11 @@
   },
   {
     "src": "/photography/star-field-dust-lanes.jpg",
-    "caption": "A star field threaded with dark dust",
+    "caption": "Center of the Milky Way at La Palma",
     "alt": "A dense field of stars crossed by broad dark dust lanes and a brighter band.",
     "width": 1098,
     "height": 714,
-    "date": "2025-09-01",
-    "displayDate": "September 2025"
-  },
-  {
-    "src": "/photography/twilight-ridge.jpg",
-    "caption": "Twilight above the ridge",
-    "alt": "A pale twilight sky with bright points and a slender crescent above a dark ridge and antenna mast.",
-    "width": 768,
-    "height": 1024,
-    "date": "2025-08-21",
+    "date": "2025-08",
     "displayDate": "August 2025"
   }
 ]

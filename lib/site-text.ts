@@ -21,11 +21,8 @@ export const inlineSiteSections = [
   "Gas recycling figure caption",
   "Escape velocity figure caption",
   "SQuIGGLE figure caption",
-  "Publications introduction",
   "Publication links note",
-  "CV introduction",
-  "Contact introduction",
-  "Visitors introduction",
+  "Office address",
 ] as const;
 
 const siteSections = [

@@ -127,7 +127,6 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
    <div className="wrap">
      <div className="section-header">
        <p className="eyebrow"><span>01</span>About me</p>
-       <span className="section-note">A little of my story</span>
      </div>
      <div className="intro-grid">
        <div>
@@ -217,14 +216,22 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
      </div>
    </div>
  </section>
- <section data-reading-section id="publications" className="section publications" aria-labelledby="publications-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>03</span>Publications</p><a className="text-link" href={assetPath("/publications.bib")}  download>Download bibliography <small>BIB</small>↓</a></div><div className="publications-heading"><SectionTitle section="publications">Publications</SectionTitle><p>{siteText["Publications introduction"]}</p></div>
-   <a className="scix-link" href={sciXUrl} target="_blank" rel="noreferrer">
-     <span>
-       <small>My publication list</small>
-       <span className="scix-link-title">Explore all papers on SciX</span>
-     </span>
-     <Arrow up/>
-   </a>
+ <section data-reading-section id="publications" className="section publications" aria-labelledby="publications-title">
+   <div className="wrap">
+     <div className="section-header">
+       <p className="eyebrow"><span>03</span>Publications</p>
+       <a className="text-link" href={assetPath("/publications.bib")} download>Download bibliography <small>BIB</small>↓</a>
+     </div>
+     <div className="publications-heading">
+       <SectionTitle section="publications">Publications</SectionTitle>
+       <a className="scix-link" href={sciXUrl} target="_blank" rel="noreferrer">
+         <span>
+           <small>My publication list</small>
+           <span className="scix-link-title">Explore all papers on SciX</span>
+         </span>
+         <Arrow up/>
+       </a>
+     </div>
    <p className="scix-note">{publications.length} publications and preprints, matched to SciX · Updated {publicationSource.displayDate}.</p><div className="publication-controls"><div className="filter-buttons" role="group" aria-label="Filter publications">{[["selected","Selected"],["all",`All publications · ${publications.length}`],["first","First author"]].map(([id,label])=><button key={id} aria-pressed={filter===id} onClick={()=>setFilter(id)}>{label}</button>)}</div><div className="search-controls"><label className="search-label"><span className="sr-only">Search publications</span><span aria-hidden="true">⌕</span><input type="search" value={query} placeholder="Search papers…" onChange={e=>{setQuery(e.target.value);if(e.target.value)setFilter("all")}}/></label><label><span className="sr-only">Filter by year</span><select value={year} onChange={e=>setYear(e.target.value)}><option value="all">All years</option>{Array.from(new Set(publications.map(p => p.year))).sort((a,b) => Number(b)-Number(a)).map(y=><option key={y}>{y}</option>)}</select></label></div></div><p className="result-count" aria-live="polite">{matches.length} {matches.length===1?"publication":"publications"} {filter==="selected"?"selected":"shown"}<span>SciX bibliography · {publicationSource.displayDate}</span></p>
  <div className="publication-list">{matches.map(p => {
    const journalUrl = p.doi ? `https://doi.org/${p.doi}` : undefined;
@@ -290,15 +297,46 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
      <Astrophotos />
    </div>
  </section>
- <section data-reading-section id="cv" className="section cv-section" aria-labelledby="cv-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>07</span>Curriculum vitae</p><span className="section-note">A path through astronomy</span></div><div className="cv-layout"><div className="cv-intro"><SectionTitle section="cv">Curriculum<br/>vitae</SectionTitle><p>{siteText["CV introduction"]}</p><a className="button" href={assetPath(`/${cvFilename}`)} download={cvFilename}>Download full CV ↓</a><p className="download-note">PDF · 3 pages · Updated 16 November 2026</p></div><div className="cv-details"><h3 className="eyebrow">Education</h3><ol className="timeline"><li><span>2024 — present</span><div><h4>PhD in Astrophysics</h4><p>Cosmic Dawn Center · DTU Space</p><small>Supervisor: Francesco Valentino</small></div></li><li><span>2022 — 2024</span><div><h4>MSc in Astronomy</h4><p>Leiden University, the Netherlands</p><small>Astronomy Research programme</small></div></li><li><span>2017 — 2022</span><div><h4>BS in Physics &amp; BA in Philosophy</h4><p>University of California, Santa Cruz</p><small>Astrophysics and philosophy of science</small></div></li></ol><div className="cv-detail-columns"><div><h3 className="eyebrow">Recognition</h3><p><External href="https://www.universiteitleiden.nl/en/news/2024/11/several-leiden-science-students-excel-and-win-khmw-young-talent-awards">KHMW Young Talent Award <Arrow up/></External><small>Astronomy master’s thesis prize · 2024</small></p><p>UCSC Dean’s Scholarship<small>Undergraduate studies</small></p></div><div><h3 className="eyebrow">Community</h3><p>DTU Space PhD Committee<small>Member · 2026–2027</small></p><p>DAWN Summit 2025<small>Scientific Organizing Committee</small></p><p>Public observing at Leiden<small>L.A.D. “F. Kaiser” · 2022–2023</small></p></div></div></div></div></div></section>
- <section data-reading-section id="contact" className="section contact" aria-labelledby="contact-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>08</span>Contact</p><span className="section-note">Ideas are better shared</span></div><div className="contact-layout"><div><SectionTitle section="contact">Let’s talk<br/><em>about galaxies.</em></SectionTitle><p>{siteText["Contact introduction"]}</p><div className="email-row"><a href={`mailto:${emailAddress}`}>{emailAddress} <Arrow up/></a><button onClick={()=>copy(emailAddress,"Email address copied.")} aria-label="Copy email address">Copy</button></div></div><div className="contact-institution"><span className="eyebrow">Based at</span><h3>Cosmic Dawn Center</h3><p>DTU Space<br/>Technical University of Denmark<br/>Kgs. Lyngby, Denmark</p><div className="contact-links"><External href="https://cosmicdawn.dk/staff/pengpei-zhu/">DAWN profile <Arrow up/></External><External href="https://orcid.org/0000-0002-6768-8335">ORCID <Arrow up/></External></div></div></div></div></section>
+ <section data-reading-section id="cv" className="section cv-section" aria-labelledby="cv-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>07</span>Curriculum vitae</p><span className="section-note">A path through astronomy</span></div><div className="cv-layout"><div className="cv-intro"><SectionTitle section="cv">Curriculum<br/>vitae</SectionTitle><a className="button" href={assetPath(`/${cvFilename}`)} download={cvFilename}>Download full CV ↓</a><p className="download-note">PDF · 3 pages · Updated 16 November 2026</p></div><div className="cv-details"><h3 className="eyebrow">Education</h3><ol className="timeline"><li><span>2024 — present</span><div><h4>PhD in Astrophysics</h4><p>Cosmic Dawn Center · DTU Space</p><small>Supervisor: Francesco Valentino</small></div></li><li><span>2022 — 2024</span><div><h4>MSc in Astronomy</h4><p>Leiden University, the Netherlands</p><small>Astronomy Research programme</small></div></li><li><span>2017 — 2022</span><div><h4>BS in Physics &amp; BA in Philosophy</h4><p>University of California, Santa Cruz</p><small>Astrophysics and philosophy of science</small></div></li></ol><div className="cv-detail-columns"><div><h3 className="eyebrow">Recognition</h3><p><External href="https://www.universiteitleiden.nl/en/news/2024/11/several-leiden-science-students-excel-and-win-khmw-young-talent-awards">KHMW Young Talent Award <Arrow up/></External><small>Astronomy master’s thesis prize · 2024</small></p><p>UCSC Dean’s Scholarship<small>Undergraduate studies</small></p></div><div><h3 className="eyebrow">Community</h3><p>DTU Space PhD Committee<small>Member · 2026–2027</small></p><p>DAWN Summit 2025<small>Scientific Organizing Committee</small></p><p>Public observing at Leiden<small>L.A.D. “F. Kaiser” · 2022–2023</small></p></div></div></div></div></div></section>
+ <section data-reading-section id="contact" className="section contact" aria-labelledby="contact-title">
+   <div className="wrap">
+     <div className="section-header">
+       <p className="eyebrow"><span>08</span>Contact</p>
+       <span className="section-note">Ideas are better shared</span>
+     </div>
+     <div className="contact-layout">
+       <div>
+         <SectionTitle section="contact">Let’s talk<br/><em>about galaxies.</em></SectionTitle>
+         <div className="email-row">
+           <a href={`mailto:${emailAddress}`}>{emailAddress} <Arrow up/></a>
+           <button onClick={() => copy(emailAddress, "Email address copied.")} aria-label="Copy email address">Copy</button>
+         </div>
+       </div>
+       <div className="contact-institution">
+         <span className="eyebrow">Based at</span>
+         <h3>Cosmic Dawn Center</h3>
+         <address>
+           DTU Space<br/>
+           Technical University of Denmark<br/>
+           {siteText["Office address"]}
+         </address>
+         <div className="contact-links">
+           <External href="https://cosmicdawn.dk/staff/pengpei-zhu/">DAWN profile <Arrow up/></External>
+           <External href="https://orcid.org/0000-0002-6768-8335">ORCID <Arrow up/></External>
+           <External href="https://www.linkedin.com/in/pengpei-zhu-52631b265/">LinkedIn <Arrow up/></External>
+           <External href="https://scholar.google.com/citations?user=WzUUBYwAAAAJ&amp;hl=en">Google Scholar <Arrow up/></External>
+           <External href="https://orbit.dtu.dk/en/persons/pengpei-zhu/">DTU Orbit <Arrow up/></External>
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
  <section id="visitors" data-reading-section className="section visitors" aria-labelledby="visitors-title">
    <div className="wrap">
      <div className="visitor-layout">
        <div>
          <p className="eyebrow">From around the world</p>
          <SectionTitle section="visitors">Visitors</SectionTitle>
-         <p>{siteText["Visitors introduction"]}</p>
        </div>
        <figure className="visitor-map">
          <iframe

@@ -52,7 +52,7 @@ The current CV PDF is the owner's three-page `PengpeiZhu_CV.pdf`, supplied on 16
 
 ## Media and provenance
 
-All runtime assets are in `public/`. The gallery uses the owner's Finder comments for captions and keeps the two earlier photographs that had no new comment. Show capture dates only when supported by EXIF DateTimeOriginal. Keep the owner's framing, colour profiles and watermarks. New gallery copies omit EXIF, GPS, XMP and other embedded comments. The owner selected the hero image separately.
+All runtime assets are in `public/`. The gallery uses captions and dates supplied by the owner, with EXIF DateTimeOriginal as the capture date source for other photos. Keep the owner's framing, colour profiles and watermarks. New gallery copies omit EXIF, GPS, XMP and other embedded comments. The owner selected the hero image separately.
 
 `lib/presentations.ts` holds the Talks & Posters entries. Store each PDF and its first-page JPEG preview in `public/talks/` using the presentation ID as the filename stem. Preserve the supplied PDF bytes and record intentional replacements in the asset manifest.
 

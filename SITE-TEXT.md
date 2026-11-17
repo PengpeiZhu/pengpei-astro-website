@@ -115,10 +115,6 @@ I am now developing an interactive catalogue for my stellar-metallicity study an
 
 > Catalogues in development, with structured data and clear provenance for future reuse.
 
-## Publications introduction
-
-Selected work on gas flows, quenching, and galaxy dynamics, alongside publications with the DeepDive and SQuIGGLE collaborations.
-
 ## Publication links note
 
 For full author lists and the latest publication status, follow the journal and SciX links. [View ORCID](https://orcid.org/0000-0002-6768-8335)
@@ -133,16 +129,9 @@ Try a few examples here, or open a full lab to change the model parameters and e
 
 ### Looking up, beyond the spectra.
 
-The featured photos change every two weeks. Select any photo to take a closer look.
+The featured photos change every two weeks.
 
-## CV introduction
+## Office address
 
-From astrophysics and philosophy at Santa Cruz to spectroscopy at Leiden and galaxy evolution at DAWN.
-
-## Contact introduction
-
-For research discussions, collaborations, or questions about my work, the best way to reach me is by email.
-
-## Visitors introduction
-
-A little map of where our paths cross.
+Elektrovej, Building 327, Room 215\
+2800 Kgs. Lyngby
