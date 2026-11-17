@@ -59,9 +59,7 @@ The chemical memory of galaxies
 
 #### What can stars tell us about a galaxy’s formation?
 
-I study the stellar metallicities of massive quiescent galaxies at high redshift. Absorption-line measurements let us connect their enrichment histories with nearby populations studied by SDSS and LEGA-C.
-
-I develop tools for stellar-population modelling and uncertainty estimation with [BaStA](https://www.basta.inaf.it/basta-home/), extracting physical information from faint spectral features. The goal is to connect the chemical record preserved in stars with the histories of galaxy growth and quenching.
+I am working on understanding the stellar metallicities of massive quiescent galaxies at high redshift. The goal is to connect the chemical record preserved in stars with the histories of galaxy growth and quenching. With [BaStA](https://www.basta.inaf.it/basta-home/), absorption-line measurements let us connect their enrichment histories with nearby SDSS and LEGA-C populations systematically.
 
 > With Anna Gallazzi, Stefano Zibetti, Francesco Valentino, and Kei Ito. Stellar-population studies in preparation.
 
@@ -73,9 +71,7 @@ Gas leaving. Gas returning?
 
 #### How do galaxies remain quiet?
 
-Using sodium absorption in JWST spectra, I investigate neutral gas outflows in distant quiescent galaxies. Their inferred velocities suggest that gas can remain bound and return, offering a window onto how galaxies stay quiet.
-
-The DeepDive sample connects the motion of neutral gas with the properties of massive galaxies after star formation has declined. These observations help us investigate the role of gas cycling in maintaining quiescence.
+Looking into sodium absorption in JWST/NIRSpec spectra from the [DeepDive sample](https://www.aanda.org/articles/aa/abs/2026/06/aa56137-25/aa56137-25.html), I investigate neutral gas outflows in distant quiescent galaxies. Their inferred velocities suggest that gas can remain bound and return, offering a window onto how galaxies stay quiet. These observations help us investigate the role of gas cycling in maintaining quiescence.
 
 ## Gas recycling figure caption
 
@@ -93,9 +89,7 @@ Cold gas, little star formation
 
 #### Can a galaxy stop forming stars while retaining its fuel?
 
-My work on gas-rich post-starburst galaxies uses Hα spectroscopy to test their ongoing star formation, connecting the gas reservoir to the process of quenching.
-
-Within [SQuIGGLE](https://squigglesurvey.github.io/), I use Keck/NIRES observations to examine the relationship between molecular gas and star formation after a recent burst. This work investigates why a substantial reservoir of gas does not necessarily imply vigorous ongoing star formation.
+My work on gas-rich post-starburst galaxies uses Hα spectroscopy to test their ongoing star formation, connecting the gas reservoir to the quenching process. With the [SQuIGGLE Survey](https://squigglesurvey.github.io/), Keck/NIRES and ALMA observations show that a substantial molecular gas reservoir does not necessarily imply vigorous ongoing star formation in galaxies.
 
 ## SQuIGGLE figure caption
 
@@ -109,7 +103,7 @@ Making complex spectra interpretable
 
 #### How can we make the evidence behind a measurement easier to examine?
 
-For my master’s work on NGC 833 and NGC 835, I developed methods to select multicomponent emission-line models using spatial, physical, and statistical information from MUSE datacubes.
+For my master’s work on NGC 833/835, I developed methods to select multicomponent emission-line models using spatial, physical, and statistical information from MUSE datacubes.
 
 I am now developing an interactive catalogue for my stellar-metallicity study and a DJA-based catalogue of red spiral galaxies at z > 1. These tools link measurements to spectra, model comparisons, diagnostics, and sample-selection information.
 
