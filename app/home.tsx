@@ -196,7 +196,7 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
              {figures && (
                <div className="research-figures">
                  {figures.map(figure => (
-                   <figure className="science-figure" data-layout={figure.layout} key={figure.image}>
+                   <figure className="science-figure" key={figure.image}>
                      <div className="figure-heading">
                        <span className="eyebrow">{figure.title}</span>
                        <button className="small-button" onClick={() => expandFigure(figure)} aria-label={`Expand ${figure.title}`}>

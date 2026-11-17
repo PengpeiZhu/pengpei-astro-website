@@ -20,7 +20,6 @@ export const inlineSiteSections = [
   "Spectra and open catalogues title",
   "Gas recycling figure caption",
   "Escape velocity figure caption",
-  "DeepDive figure caption",
   "SQuIGGLE figure caption",
   "Publications introduction",
   "Publication links note",

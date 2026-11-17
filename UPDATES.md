@@ -2,6 +2,13 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Compact research figures and job-search badge
+
+- Replaced SQuIGGLE Figure 1 with Figure 3 and removed the DeepDive figure captioned “Neutral gas in galaxies with little star formation.”
+- Reduced the preview sizes of the research figures and linked BaStA in the stellar-metallicity project.
+- Styled the Searching for Jobs badge as a prominent green banner across the bottom of the portrait.
+- Verified the new figure and removed assets in both export paths. Checked the full-size figure viewer and the banner at desktop and phone widths.
+
 ## 2026-11-17 · Editable website text and research figures
 
 - Moved the homepage prose, research text and figure captions into `SITE-TEXT.md`. The GitHub Pages build reads this file directly.

@@ -10,9 +10,8 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 - ORCID: https://orcid.org/0000-0002-6768-8335
 - Publications: all 19 results from the existing SciX query, checked on 12 November 2026. Exact query: `lib/publication-source.json`; individual matching records: `docs/scix-matches.json`.
 - Added metadata and full author lists: https://arxiv.org/abs/2610.19146 and https://arxiv.org/abs/2610.27101. Both are preprints in the verified SciX results. Other bibliography metadata retains the existing CV entries.
-- DeepDive science figure: Zhu et al. (2026), Figure 3, https://arxiv.org/html/2602.17767v2#S3.F3 . Original symbols and uncertainties are retained.
 - Outflow research additions from the owner on 17 November 2026: `phd1_gas_recycling_schematic.png` and `rs_outflow_vesc_vout.pdf`, served under `public/research/` with their supplied bytes. The velocity plot also has a PNG preview rendered from the full PDF page.
-- SQuIGGLE Figure 1: Zhu et al. (2025), *ApJ*, 981, 60, doi:10.3847/1538-4357/adaf1c. The web figure is the original vector image from [the author's paper](https://arxiv.org/html/2501.16459v1#S2.F1), distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). The page links to [the SciX record](https://scixplorer.org/abs/2025ApJ...981...60Z/abstract).
+- SQuIGGLE Figure 3: Zhu et al. (2025), *ApJ*, 981, 60, doi:10.3847/1538-4357/adaf1c. The web figure is the original vector image from [the author's paper](https://arxiv.org/html/2501.16459v1#S3.F3), distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). The page links to [the SciX record](https://scixplorer.org/abs/2025ApJ...981...60Z/abstract).
 
 ## Branding and design
 

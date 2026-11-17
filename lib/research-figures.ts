@@ -7,7 +7,6 @@ export type ResearchFigure = {
   width: number;
   height: number;
   alt: string;
-  layout?: "wide" | "tall";
   pdf?: string;
 };
 
@@ -30,25 +29,15 @@ export const researchFigures: Record<string, readonly ResearchFigure[]> = {
       alt: "A plot of outflow velocity against dynamical-mass escape velocity in kilometres per second. Points with error bars lie on both sides of the dashed equality line.",
       pdf: "/research/rs-outflow-escape-velocity.pdf",
     },
-    {
-      title: "DeepDive neutral gas outflows",
-      caption: "DeepDive figure caption",
-      image: "/deepdive-outflows.png",
-      width: 5235,
-      height: 1886,
-      alt: "Star formation rate versus stellar mass and neutral gas velocity offset for DeepDive galaxies and literature samples. Distant quiescent galaxies show neutral outflows despite low star formation rates.",
-      layout: "wide",
-    },
   ],
   "post-starburst-galaxies": [
     {
-      title: "SQuIGGLE Keck/NIRES spectra",
+      title: "SQuIGGLE star formation and molecular gas",
       caption: "SQuIGGLE figure caption",
-      image: "/research/squiggle-keck-nires-figure-1.svg",
-      width: 1501,
-      height: 2065,
-      alt: "Paired panels show the spectra near H-alpha and the continuum-subtracted line fits for the SQuIGGLE post-starburst galaxies observed with Keck/NIRES.",
-      layout: "tall",
+      image: "/research/squiggle-star-formation-figure-3.svg",
+      width: 673,
+      height: 645,
+      alt: "Star formation rate versus molecular hydrogen mass. Red stars show SQuIGGLE post-starburst galaxies and coloured contours show three comparison samples.",
     },
   ],
 };

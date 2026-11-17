@@ -61,7 +61,7 @@ The chemical memory of galaxies
 
 I study the stellar metallicities of massive quiescent galaxies at high redshift. Absorption-line measurements let us connect their enrichment histories with nearby populations studied by SDSS and LEGA-C.
 
-I develop tools for stellar-population modelling and uncertainty estimation, extracting physical information from faint spectral features. The goal is to connect the chemical record preserved in stars with the histories of galaxy growth and quenching.
+I develop tools for stellar-population modelling and uncertainty estimation with [BaStA](https://www.basta.inaf.it/basta-home/), extracting physical information from faint spectral features. The goal is to connect the chemical record preserved in stars with the histories of galaxy growth and quenching.
 
 > With Anna Gallazzi, Stefano Zibetti, Francesco Valentino, and Kei Ito. Stellar-population studies in preparation.
 
@@ -85,10 +85,6 @@ The DeepDive sample connects the motion of neutral gas with the properties of ma
 
 **Outflow speeds and escape speeds.** The escape speeds are estimated from dynamical masses. The dashed line marks equal speeds. [Open the original PDF](/research/rs-outflow-escape-velocity.pdf).
 
-## DeepDive figure caption
-
-**Neutral gas in galaxies with little star formation.** Star formation rate versus stellar mass and gas velocity offset. Original figure from [Zhu et al. (2026), Fig. 3](https://scixplorer.org/abs/2026A%26A...712A.169Z/abstract). Symbols and uncertainties retain the paper’s definitions.
-
 ## Post-starburst galaxies title
 
 Cold gas, little star formation
@@ -103,7 +99,7 @@ Within [SQuIGGLE](https://squigglesurvey.github.io/), I use Keck/NIRES observati
 
 ## SQuIGGLE figure caption
 
-**The Hα region in SQuIGGLE galaxies.** Paired panels show the Keck/NIRES spectra with their continuum models and the fits after continuum subtraction. Figure 1 from [Zhu et al. (2025), ApJ 981, 60](https://scixplorer.org/abs/2025ApJ...981...60Z/abstract), [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
+**Star formation rate and molecular gas mass.** Red stars mark SQuIGGLE post-starburst galaxies. The contours show comparison samples from COLD GASS, PHIBSS and PHIBSS2. Figure 3 from [Zhu et al. (2025), ApJ 981, 60](https://scixplorer.org/abs/2025ApJ...981...60Z/abstract), [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 ## Spectra and open catalogues title
 

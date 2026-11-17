@@ -33,7 +33,7 @@ GitHub Pages builds and deploys automatically on pushes to `main`. Use the manua
 - The Milky Way photograph is the hero background. Keep the smaller portrait, visible Chinese name, and compact email/CV/Contact block beneath the portrait.
 - DAWN and DTU logos are transparent, rendered white with thin white dividing lines over the hero image.
 - Preserve the San Marco palette and the opening credit to Fra Angelico. Keep large readable body text, contrasting section backgrounds, the reading progress bars and the back-to-top control.
-- Research topics have separate headings, anchors and generous spacing. Maintain the scientific figure, caption, uncertainties and attribution.
+- Research topics have separate headings, anchors and generous spacing. Preserve the figures’ data, uncertainties, captions and attribution.
 - Keep keyboard-accessible navigation, visible focus, dialog Escape support, descriptive alternatives and mobile layout.
 
 ## Publications
