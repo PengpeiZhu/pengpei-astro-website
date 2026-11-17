@@ -78,7 +78,7 @@ h3 { font-size: 34px; font-weight: 400; letter-spacing: -.025em; }
 .hero :focus-visible { outline-color: var(--highlight); }
 .portrait { max-width: 410px; justify-self: end; width: 100%; }
 .portrait-frame { position: relative; }
-.portrait img { width: 100%; aspect-ratio: 4/4.5; object-fit: cover; object-position: 48% 45%; height: auto; filter: saturate(.85); }
+.portrait img { width: 100%; height: auto; }
 .portrait-frame > span { display: none; }
 .portrait figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 17px; color: #d2ded5; margin-top: 20px; }
 .portrait figcaption > span:first-child { color: var(--paper); }
@@ -291,7 +291,6 @@ footer > a:first-child > span { font-size: 17px; margin-left: 10px; }
   .hero-actions .button { font-size: 18px; gap: 20px; }
   .hero-actions .text-link { font-size: 18px; }
   .portrait { max-width: none; display: grid; grid-template-columns: 42% minmax(0,1fr); gap: 24px; align-items: end; }
-  .portrait img { aspect-ratio: 4/4.5; }
   .portrait figcaption { margin-top: 0; font-size: 16px; gap: 8px; }
   .page-index nav { gap: 12px 22px; }
   .page-index nav a { font-size: 18px; }
@@ -445,7 +444,6 @@ h3 { font-size: 31px; }
 .institution-marks .dtu-mark { width: 40px; height: auto; }
 .institution-marks .dawn-mark { width: 174px; height: auto; }
 .portrait { width: var(--portrait-width); max-width: 100%; }
-.portrait img { aspect-ratio: 1; filter: none; }
 .portrait figcaption { color: #F8EADE; margin-top: 15px; font-size: 16px; }
 .hero-contact {
   width: var(--portrait-width);
@@ -811,13 +809,20 @@ h3 { font-size: 31px; }
 .presentation-row h3 { max-width: 740px; font: 400 clamp(25px, 2.35vw, 36px)/1.22 var(--serif); }
 .presentation-event { margin-top: 14px; font-size: 19px; }
 .presentation-date { margin-top: 2px; color: var(--muted); font-size: 17px; }
-.presentation-slot {
+.presentation-material {
+  display: grid;
+  gap: 8px;
   justify-self: end;
   width: min(100%, 340px);
-  aspect-ratio: 16 / 9;
-  border: 1px solid var(--line);
-  background: #FFFFFF30;
+  font-size: 17px;
 }
+.presentation-material[data-kind="Poster"] { width: min(100%, 175px); }
+.presentation-material img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+.presentation-material:hover img { border-color: currentColor; }
 @media (max-width: 900px) {
   .project-browser { grid-template-columns: 1fr; gap: 24px; }
   .project-tab { padding: 14px 16px; }
@@ -826,12 +831,12 @@ h3 { font-size: 31px; }
   .project-preview-heading p { font-size: 18px; }
   .presentation-list { margin-top: 28px; }
   .presentation-row { grid-template-columns: 1fr; gap: 20px; padding-block: 26px; }
-  .presentation-slot { justify-self: start; width: min(100%, 230px); }
+  .presentation-material { justify-self: start; max-width: 260px; }
 }
 @media print {
   .institution-marks img { filter: none; }
   .hero-contact { border-color: var(--line); text-shadow: none; }
-  .lab-preview-frame, .presentation-slot { display: none; }
+  .lab-preview-frame, .presentation-material img { display: none; }
   .presentation-row { display: block; break-inside: avoid; }
 }
 

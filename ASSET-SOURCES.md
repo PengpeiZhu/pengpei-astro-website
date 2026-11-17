@@ -25,11 +25,17 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 
 ## Photographs
 
-All photographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder. Three already appeared in the gallery and now use captions based on their comments. The other two previously published photos retain their captions, for a total of 32 photographs. Capture dates come from EXIF DateTimeOriginal where available.
+The owner supplied the current profile portrait on 17 November 2026. Its web copy at `public/portrait-pengpei-zhu.jpg` preserves the framing, decoded pixels and Display P3 colour profile.
+
+The astrophotographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder. Three already appeared in the gallery and now use captions based on their comments. The other two previously published photos retain their captions, for a total of 32 photographs. Capture dates come from EXIF DateTimeOriginal where available.
 
 New web copies were made with lossless JPEG optimisation. Decoded pixels, colour profiles, framing and visible watermarks were preserved. EXIF (including GPS), XMP, IPTC and other JPEG comments were excluded. Captions and alternative descriptions are in `lib/photography.json`; reviewed file hashes are in `docs/assets-sha256.json`. The hero is the separately selected Milky Way image originally named `841891B8-CDB1-4740-BF61-4A57336F96B3_1_102_a.jpeg`.
 
 Official names used in captions were checked with the [Royal House of Denmark](https://www.kongehuset.dk/en/palaces-and-the-royal-yacht/the-hermitage-palace/), the [Observatories of the Canary Islands](https://ocan.iac.es/), the [Cherenkov Telescope Array Observatory](https://www.ctao.org/emission-to-discovery/array-sites/ctao-north/) and [NASA’s Center for Near-Earth Object Studies](https://cneos.jpl.nasa.gov/news/news181a.html).
+
+## Presentations
+
+The owner supplied four slide decks and two posters on 17 November 2026. The PDF files in `public/talks/` preserve the supplied bytes. Their JPEG previews show the first page. The author’s slide covers supply the talk dates. The May 2024 poster title matches the conference programme. The dates and location were checked against the [Amsterdam University of Applied Sciences conference record](https://research.hva.nl/p/en/activities/nederlandse-astronomen-conferentie-2024) and [KU Leuven’s presentation record](https://fys.kuleuven.be/ster/research-projects/superstars-3d/superstars3d-talks-posters).
 
 ## Interactive scientific pages
 
@@ -37,7 +43,7 @@ Official names used in captions were checked with the [Royal House of Denmark](h
 - `public/interactive/sandage-sfh.html`: owner's Sandage SFH lab. Uses the Sandage `t exp(−t²/2τ²)` form and embedded Planck18 age table. Original scientific assumptions, limits, provenance and sources are retained inside the page.
 - Both standalone files preserve their embedded data and scripts. No remote script or data download is needed for the labs. Checksums are in `docs/assets-sha256.json`.
 - Metallicity remains a placeholder.
-- The owner supplied the MapMyVisitors embed on 16 November 2026. The sandboxed `public/visitor-map.html` loads the original script over HTTPS with its supplied widget key, colour and width. [MapMyVisitors](https://mapmyvisitors.com/)
+- The owner supplied the current MapMyVisitors embed on 17 November 2026. The sandboxed `public/visitor-map.html` loads the script over HTTPS with the supplied widget key, colour and width. [MapMyVisitors](https://mapmyvisitors.com/)
 
 ## Build references
 

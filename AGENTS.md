@@ -52,7 +52,9 @@ The current CV PDF is the owner's three-page `PengpeiZhu_CV.pdf`, supplied on 16
 
 ## Media and provenance
 
-All runtime assets are in `public/`. The gallery uses the owner's Finder comments for captions and keeps the two earlier photographs that had no new comment. Show capture dates only when supported by EXIF DateTimeOriginal. Keep the owner's framing, colour profiles and watermarks. New gallery copies omit EXIF, GPS, XMP and other embedded comments. The owner selected the hero image separately. Slides and posters remain placeholders.
+All runtime assets are in `public/`. The gallery uses the owner's Finder comments for captions and keeps the two earlier photographs that had no new comment. Show capture dates only when supported by EXIF DateTimeOriginal. Keep the owner's framing, colour profiles and watermarks. New gallery copies omit EXIF, GPS, XMP and other embedded comments. The owner selected the hero image separately.
+
+`lib/presentations.ts` holds the Talks & Posters entries. Store each PDF and its first-page JPEG preview in `public/talks/` using the presentation ID as the filename stem. Preserve the supplied PDF bytes and record intentional replacements in the asset manifest.
 
 `lib/photography.json` defines the gallery order. Every 14 days from 16 November 2026 at midnight UTC, `lib/photo-rotation.ts` advances four places through that order and wraps at the end. The More photos panel pages through every photo outside the current selection. The gallery runs in the browser and rotates without a rebuild.
 

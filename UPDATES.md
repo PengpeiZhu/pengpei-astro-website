@@ -2,6 +2,14 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Profile portrait, visitors, and presentation PDFs
+
+- Replaced the homepage portrait and sharing image with the owner's supplied photo. The homepage displays the full framing.
+- Switched the Visitors map to the new MapMyVisitors embed.
+- Added PDF links and first-page previews for four slide decks and two posters, including the May 2024 Netherlands Astronomers’ Conference poster. Removed the GalFirenze flash talk and the Annual Danish Astronomy Meeting 2025 poster from the listing.
+- Added directions for editing website text in the README.
+- Verified both site export paths, the portrait and map at desktop and phone widths, and all six PDF links. Opened the NAC poster from the Talks & Posters list.
+
 ## 2026-11-16 · Featured photo sizing
 
 - Sized each featured frame to its photo’s original proportions and staggered the two columns to accommodate portrait and landscape images.

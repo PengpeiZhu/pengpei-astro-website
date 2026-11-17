@@ -69,7 +69,7 @@ export default function Home(){
         </div>
         <figure className="portrait">
           <div className="portrait-frame">
-            <img src={assetPath("/pengpei-zhu.jpg")}  alt="Pengpei Zhu" width="1024" height="993" fetchPriority="high"/>
+            <img src={assetPath("/portrait-pengpei-zhu.jpg")} alt="Pengpei Zhu by the water" width="956" height="822" fetchPriority="high"/>
             <span aria-hidden="true"/>
           </div>
           <figcaption>
@@ -119,17 +119,34 @@ export default function Home(){
      <div className="section-header"><p className="eyebrow"><span>05</span>Presentations</p></div>
      <SectionTitle section="talks">Talks &amp; Posters</SectionTitle>
      <ol className="presentation-list">
-       {presentations.map(presentation => (
-         <li className="presentation-row" key={presentation.id}>
-           <div>
-             <p className="presentation-format">{presentation.format}</p>
-             <h3>{presentation.title}</h3>
-             <p className="presentation-event"><External href={presentation.href}>{presentation.event} <Arrow up/></External></p>
-             <p className="presentation-date">{presentation.venue} · <time dateTime={presentation.startDate}>{presentation.date}</time></p>
-           </div>
-           <div className="presentation-slot" aria-hidden="true" />
-         </li>
-       ))}
+       {presentations.map(presentation => {
+         const media = `/talks/${presentation.id}`;
+         return (
+           <li className="presentation-row" key={presentation.id}>
+             <div>
+               <p className="presentation-format">{presentation.format}</p>
+               <h3>{presentation.title}</h3>
+               <p className="presentation-event">
+                 {presentation.href
+                   ? <External href={presentation.href}>{presentation.event} <Arrow up/></External>
+                   : presentation.event}
+               </p>
+               <p className="presentation-date">{presentation.venue} · <time dateTime={presentation.startDate}>{presentation.date}</time></p>
+             </div>
+             <a
+               className="presentation-material"
+               data-kind={presentation.material}
+               href={assetPath(`${media}.pdf`)}
+               target="_blank"
+               rel="noreferrer"
+               aria-label={`${presentation.material} (PDF) for ${presentation.event} (opens in a new tab)`}
+             >
+               <img src={assetPath(`${media}.jpg`)} alt="" width={presentation.preview.width} height={presentation.preview.height} loading="lazy"/>
+               <span>{presentation.material} (PDF) <Arrow up/></span>
+             </a>
+           </li>
+         );
+       })}
      </ol>
    </div>
  </section>

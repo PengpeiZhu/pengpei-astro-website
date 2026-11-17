@@ -4,6 +4,10 @@ Pengpei's personal academic website for Pengpei Zhu (朱芃佩), with research, 
 
 This website includes **19 publications and preprints**, matched to the existing SciX search. Visit the site at **[pengpeizhu.com](https://pengpeizhu.com/)**. The source is in the public [PengpeiZhu/pengpei-astro-website repository](https://github.com/PengpeiZhu/pengpei-astro-website). Feature and maintenance history is recorded in [UPDATES.md](UPDATES.md).
 
+## Edit the website text
+
+Open [app/page.tsx](app/page.tsx) on GitHub and click the pencil icon. Search for a phrase you see on the website to find the matching text in the file. The table below points to the separate files for talks, photo captions and publication records. Commit to `main` to publish the update automatically.
+
 ## Review locally
 
 For a fresh clone, install Node.js 24, then run `npm ci` and `npm run build` to create `out/`. Built files and dependencies are intentionally excluded from Git.
@@ -38,15 +42,17 @@ npm run preview
 
 | File or folder | Purpose |
 | --- | --- |
-| `app/page.tsx` | All homepage sections, publications, gallery, downloads and contact details |
+| `app/page.tsx` | Homepage copy, including About, research summaries, CV and Contact |
+| `app/layout.tsx` | Page title, description and image used when sharing links |
 | `app/globals.css` | San Marco colours, typography, responsive layout and progress bars |
 | `app/interactive-projects.tsx` | Left-hand lab selector and full-page links |
 | `app/lab-preview.tsx` | Limited previews using the original lab scripts in isolated frames |
 | `lib/publications.json` | The 19 records, individual BibTeX citations and SciX order |
 | `lib/publication-source.json` | SciX query and last verification date |
-| `lib/presentations.ts` | Talks and posters, with slide areas intentionally empty |
+| `lib/presentations.ts` | Talk and poster titles, events, dates and preview sizes |
 | `lib/photography.json` | Gallery captions, image dimensions and dates |
-| `public/` | All photographs, logos, science figure, CV, bibliography and lab HTML files |
+| `public/talks/` | Presentation PDFs and first-page previews, named by presentation ID |
+| `public/` | Photographs, logos, science figure, CV, bibliography and lab HTML files |
 | `docs/scix-matches.json` | One-to-one match between all 19 website records and SciX |
 | `docs/assets-sha256.json` | Checksums for the reviewed asset set |
 | `AGENTS.md` | Maintenance instructions and established content/design decisions |
@@ -82,4 +88,4 @@ The workflow follows [GitHub's custom Pages workflow documentation](https://docs
 
 ## Preserved placeholders and credits
 
-The metallicity explorer and presentation media remain placeholders. UVJ + SED and Sandage SFH are fully included. The Visitors section loads the owner's MapMyVisitors embed. See [ASSET-SOURCES.md](ASSET-SOURCES.md) for provenance and [RIGHTS.md](RIGHTS.md) for attribution and reuse notes.
+The metallicity explorer is a placeholder. UVJ + SED and Sandage SFH are fully included. The Visitors section loads the owner's MapMyVisitors embed. See [ASSET-SOURCES.md](ASSET-SOURCES.md) for provenance and [RIGHTS.md](RIGHTS.md) for attribution and reuse notes.

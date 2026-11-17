@@ -24,7 +24,10 @@ for (let url of new Set(urls)) {
   if (!extname(target) && statSync(target).isDirectory()) assert(existsSync(resolve(target, "index.html")));
   checked++;
 }
-for (const file of ["Pengpei-Zhu-CV.pdf", "publications.bib", "interactive/uvj-sed-lab.html", "interactive/sandage-sfh.html"]) {
+const presentationPdfs = urls
+  .filter(url => url.startsWith(`${basePath}/talks/`) && url.endsWith(".pdf"))
+  .map(url => url.slice(basePath.length + 1));
+for (const file of ["Pengpei-Zhu-CV.pdf", "publications.bib", "interactive/uvj-sed-lab.html", "interactive/sandage-sfh.html", ...presentationPdfs]) {
   assert(readFileSync(resolve(root, file)).equals(readFileSync(resolve("public", file))), `Export changed ${file}`);
 }
 writeFileSync(resolve(root, ".nojekyll"), "");

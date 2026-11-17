@@ -1,6 +1,6 @@
 {
   "publications.bib": "deb05716a2231d6fc7defff50b9bcdc2019f8a6f456cc966b149ae72d283f801",
-  "pengpei-zhu.jpg": "056caa77745fa4681bd42d78f690b9a49fcaa51d3fac6478b06dbb79fe63e239",
+  "portrait-pengpei-zhu.jpg": "73b8017643b12f393575df7819ea91fc8f7a62b752dc1b29260316f7890569f4",
   "Pengpei-Zhu-CV.pdf": "7764e4061fc826b657358be8380c556a6230b50053459b39e1507f9e29b07243",
   "deepdive-outflows.png": "f9204ffd83dd1882804dd6f83686b538f33c9ad956ebf1979fc435b89077d7d0",
   "favicon.svg": "06ed949235bae5dc60829ee8ce8ac11590b8cb51de344c5dc60e562a8c478618",
@@ -15,7 +15,7 @@
   "interactive/sandage-sfh.html": "546b0e176d3d59118f8bc24c4d824511b265a9e98522b761342a10fa85cb0687",
   "interactive/uvj-sed-lab.html": "13c3135054b37c9a4f8a95a7783bc737eefe3753564d0b4fc179cea6a10bc074",
   "branding/zhu-seal.svg": "06ed949235bae5dc60829ee8ce8ac11590b8cb51de344c5dc60e562a8c478618",
-  "visitor-map.html": "fe24ff670ec35eabb3decc0dbd728c107a0fb7063c240d4d9d6c9fb651b43a45",
+  "visitor-map.html": "ed2c0bc14d096de0a7a9079ce82962a032e06f3aaceb698277ef5651bdcab2f8",
   "photography/hermitage-star-trails.jpg": "9819d4769caafd0f99556886d9da688e4123fe5efb69d1e3e2cdaed18cc153bb",
   "photography/milky-way-over-roque-de-los-muchachos.jpg": "040f52b3a9c8657009bc4c6e77394597a58e2966a339bb4ff2f1d486e410638e",
   "photography/m81-m82.jpg": "588e2900b07c2152b07a6e701508687a9282013aa1bc9258c237275f3a6f415e",
@@ -42,5 +42,17 @@
   "photography/star-trails-at-uc-santa-cruz.jpg": "39b45f446eb16858b19586d2940df9f9bb385629dd9914eb6b2fcffc7bad961e",
   "photography/gtc-atlantic-sunset.jpg": "505025b18d6790e2b530626a6bda918811ee03c0c8d960c9dbb62487b0221f95",
   "photography/winter-milky-way-over-the-observatory.jpg": "183ba71e8ee82b0973a38f843dce1974faad85776e7c312895c912d579ede14d",
-  "photography/high-school-astrophotography-setup.jpg": "5de435b1c62e5d7a53153ed81a9d46aa69f13227405f8c06622176a94ed12a6f"
+  "photography/high-school-astrophotography-setup.jpg": "5de435b1c62e5d7a53153ed81a9d46aa69f13227405f8c06622176a94ed12a6f",
+  "talks/charting-cosmic-dawn-2026.pdf": "18a6925bd593235260212b0ac0e8a00e7797b66c4a8286f8590ce0335c909ed5",
+  "talks/charting-cosmic-dawn-2026.jpg": "397520bcc09b7ea0cce67fc5bc7551f909fab5401b8046b35edb384473a72345",
+  "talks/eas-2026-poster.pdf": "b3063348332ce18b6f821abb34b64029c45fabe5b6cab04551fef8dbb9584cff",
+  "talks/eas-2026-poster.jpg": "aadd2a8a39356a8d3d8a2ca6bad24c6e0bc2a1b0d7c5b755f01ca4f78a3c0dc7",
+  "talks/nac-2024-poster.pdf": "317b43a099df379de7170aa0f0e33c84cc8820fd5c3d3483a554b16650001ccf",
+  "talks/nac-2024-poster.jpg": "837fa2e38269e4e06685418f0efa3c895ce1c717d71a063a3edaf5ba78a1f623",
+  "talks/msc-colloquium.pdf": "6a8a2ff333ec3cb4e4de4ed5a47ae3af3039a4620918c67836cdb3337e78d002",
+  "talks/msc-colloquium.jpg": "af64272df5fb19573e73fb1579a4ad8658dfc35793c925ace8ca6a288042b414",
+  "talks/phd-mandatory-lecture.pdf": "fd024cdc994d56569378024911f554ba33dee1d5041f122c627b1892b7f8ae07",
+  "talks/phd-mandatory-lecture.jpg": "3d5c5543fff8f3c51f6e6dd7ea1f5b90f26cd2cf680ec9ffc03da9189082a4e9",
+  "talks/tokyo-jwst-2026.pdf": "b92f5d036e8c8319692ddc07d9763e5e68ce8ed07fdffb4286f5646cbd9cfb4b",
+  "talks/tokyo-jwst-2026.jpg": "d6fe7f6080c2c4b5559dca2d3815a361d162864582e3a9d1297e1394e5669c53"
 }
