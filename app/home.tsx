@@ -311,41 +311,37 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
            <a href={`mailto:${emailAddress}`}>{emailAddress} <Arrow up/></a>
            <button onClick={() => copy(emailAddress, "Email address copied.")} aria-label="Copy email address">Copy</button>
          </div>
-       </div>
-       <div className="contact-institution">
-         <span className="eyebrow">Based at</span>
-         <h3>Cosmic Dawn Center</h3>
-         <address>
-           DTU Space<br/>
-           Technical University of Denmark<br/>
-           {siteText["Office address"]}
-         </address>
-         <div className="contact-links">
-           <External href="https://cosmicdawn.dk/staff/pengpei-zhu/">DAWN profile <Arrow up/></External>
-           <External href="https://orcid.org/0000-0002-6768-8335">ORCID <Arrow up/></External>
-           <External href="https://www.linkedin.com/in/pengpei-zhu-52631b265/">LinkedIn <Arrow up/></External>
-           <External href="https://scholar.google.com/citations?user=WzUUBYwAAAAJ&amp;hl=en">Google Scholar <Arrow up/></External>
-           <External href="https://orbit.dtu.dk/en/persons/pengpei-zhu/">DTU Orbit <Arrow up/></External>
+         <div className="contact-institution">
+           <span className="eyebrow">Based at</span>
+           <h3>Cosmic Dawn Center</h3>
+           <address>
+             DTU Space<br/>
+             Technical University of Denmark<br/>
+             {siteText["Office address"]}
+           </address>
+           <div className="contact-links">
+             <External href="https://cosmicdawn.dk/staff/pengpei-zhu/">DAWN profile <Arrow up/></External>
+             <External href="https://orcid.org/0000-0002-6768-8335">ORCID <Arrow up/></External>
+             <External href="https://www.linkedin.com/in/pengpei-zhu-52631b265/">LinkedIn <Arrow up/></External>
+             <External href="https://scholar.google.com/citations?user=WzUUBYwAAAAJ&amp;hl=en">Google Scholar <Arrow up/></External>
+             <External href="https://orbit.dtu.dk/en/persons/pengpei-zhu/">DTU Orbit <Arrow up/></External>
+           </div>
          </div>
        </div>
-     </div>
-   </div>
- </section>
- <section id="visitors" data-reading-section className="section visitors" aria-labelledby="visitors-title">
-   <div className="wrap">
-     <div className="visitor-layout">
-       <div>
-         <p className="eyebrow">From around the world</p>
-         <SectionTitle section="visitors">Visitors</SectionTitle>
-       </div>
-       <figure className="visitor-map">
-         <iframe
-           src={assetPath("/visitor-map.html")}
-           title="Visitor map from MapMyVisitors"
-           sandbox="allow-scripts allow-top-navigation-by-user-activation"
-         />
-         <figcaption>Visitor map by <External href="https://mapmyvisitors.com/">MapMyVisitors <Arrow up/></External></figcaption>
-       </figure>
+       <section id="visitors" data-reading-section className="contact-visitors" aria-labelledby="visitors-title">
+         <div className="section-title">
+           <h3 id="visitors-title">Visitors</h3>
+           <ReadingTrack section="visitors"/>
+         </div>
+         <figure className="visitor-map">
+           <iframe
+             src={assetPath("/visitor-map.html")}
+             title="Visitor map from MapMyVisitors"
+             sandbox="allow-scripts allow-top-navigation-by-user-activation"
+           />
+           <figcaption>Visitor map by <External href="https://mapmyvisitors.com/">MapMyVisitors <Arrow up/></External></figcaption>
+         </figure>
+       </section>
      </div>
      <footer>
        <a href="#top">Pengpei Zhu <span lang="zh">朱芃佩</span></a>

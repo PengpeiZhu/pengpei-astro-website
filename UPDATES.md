@@ -2,6 +2,12 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Research rows and compact visitor map
+
+- Arranged each research topic in a horizontal row on wider screens, with the two outflow figures next to each other. Aligned the Publications title and SciX link on one row.
+- Combined Contact and Visitors into one section, with contact details on the left and a smaller MapMyVisitors map on the right. The content stacks on narrow screens.
+- Checked the layout at desktop and phone widths, confirmed the visitor map renders, and exercised keyboard figure expansion, publication filtering and email copying. The domain-root export passed validation.
+
 ## 2026-11-17 · Research layout, photo sizes and contact details
 
 - Put Research text and figure previews in a narrower single column and moved the SciX link directly beneath the Publications title.

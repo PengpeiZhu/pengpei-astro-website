@@ -29,11 +29,11 @@ GitHub Pages builds and deploys automatically on pushes to `main`. Use the manua
 - Name: Pengpei Zhu, 朱芃佩. Contact: `penzhu@space.dtu.dk`. ORCID: `0000-0002-6768-8335`.
 - The owner edits the homepage prose and research captions in `SITE-TEXT.md`. The build reads each labelled section and publishes it with the site. Keep the owner's wording unless a change is requested. Use the owner's records for roles, awards, publications and dates.
 - Top links: A little about me; My research; Fun Interactive projects; Astrophotos.
-- Order: About, Research, Publications, Interactive projects, Talks & Posters, Astrophotos, CV, Contact, Visitors.
+- Order: About, Research, Publications, Interactive projects, Talks & Posters, Astrophotos, CV, then Contact with Visitors.
 - The Milky Way photograph is the hero background. Keep the smaller portrait, visible Chinese name, and compact email/CV/Contact block beneath the portrait.
 - DAWN and DTU logos are transparent, rendered white with thin white dividing lines over the hero image.
 - Preserve the San Marco palette and the opening credit to Fra Angelico. Keep large readable body text, contrasting section backgrounds, the reading progress bars and the back-to-top control.
-- Research topics have separate headings, anchors and generous spacing. Preserve the figures’ data, uncertainties, captions and attribution.
+- Research topics have separate headings and anchors. On wide screens, keep each topic’s text and figures in one row and align the Publications title with the SciX link. Preserve the figures’ data, uncertainties, captions and attribution.
 - Keep keyboard-accessible navigation, visible focus, dialog Escape support, descriptive alternatives and mobile layout.
 
 ## Publications
