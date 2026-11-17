@@ -6,7 +6,9 @@ This website includes **19 publications and preprints**, matched to the existing
 
 ## Edit the website text
 
-Open [app/page.tsx](app/page.tsx) on GitHub and click the pencil icon. Search for a phrase you see on the website to find the matching text in the file. The table below points to the separate files for talks, photo captions and publication records. Commit to `main` to publish the update automatically.
+Open [SITE-TEXT.md](SITE-TEXT.md) on GitHub and click the pencil icon. Edit the text under the relevant heading. Use ordinary Markdown for links, bold text and paragraphs. Keep the section labels in place and commit to `main` to publish automatically. Clear the Job search badge text to hide the badge.
+
+The table below points to the files for publication records, talks and photo captions.
 
 ## Review locally
 
@@ -42,7 +44,9 @@ npm run preview
 
 | File or folder | Purpose |
 | --- | --- |
-| `app/page.tsx` | Homepage copy, including About, research summaries, CV and Contact |
+| `SITE-TEXT.md` | Editable homepage text, including the biography, research descriptions, figure captions and job-search badge |
+| `app/page.tsx` | Formats the Markdown when building the website |
+| `app/home.tsx` | Homepage layout, navigation and controls |
 | `app/layout.tsx` | Page title, description and image used when sharing links |
 | `app/globals.css` | San Marco colours, typography, responsive layout and progress bars |
 | `app/interactive-projects.tsx` | Left-hand lab selector and full-page links |

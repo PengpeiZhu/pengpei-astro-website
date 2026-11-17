@@ -11,6 +11,8 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 - Publications: all 19 results from the existing SciX query, checked on 12 November 2026. Exact query: `lib/publication-source.json`; individual matching records: `docs/scix-matches.json`.
 - Added metadata and full author lists: https://arxiv.org/abs/2610.19146 and https://arxiv.org/abs/2610.27101. Both are preprints in the verified SciX results. Other bibliography metadata retains the existing CV entries.
 - DeepDive science figure: Zhu et al. (2026), Figure 3, https://arxiv.org/html/2602.17767v2#S3.F3 . Original symbols and uncertainties are retained.
+- Outflow research additions from the owner on 17 November 2026: `phd1_gas_recycling_schematic.png` and `rs_outflow_vesc_vout.pdf`, served under `public/research/` with their supplied bytes. The velocity plot also has a PNG preview rendered from the full PDF page.
+- SQuIGGLE Figure 1: Zhu et al. (2025), *ApJ*, 981, 60, doi:10.3847/1538-4357/adaf1c. The web figure is the original vector image from [the author's paper](https://arxiv.org/html/2501.16459v1#S2.F1), distributed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/). The page links to [the SciX record](https://scixplorer.org/abs/2025ApJ...981...60Z/abstract).
 
 ## Branding and design
 
@@ -26,6 +28,8 @@ Prepared from the owner's existing academic website on 12 November 2026. Scienti
 ## Photographs
 
 The owner supplied the current profile portrait on 17 November 2026. Its web copy at `public/portrait-pengpei-zhu.jpg` preserves the framing, decoded pixels and Display P3 colour profile.
+
+The owner supplied the annotated archery photo on 17 November 2026. Its web copy at `public/archery-lagrange-points.jpg` preserves the framing, decoded pixels, sRGB profile and labels.
 
 The astrophotographs are by Pengpei Zhu. On 16 November 2026, the gallery was expanded to include all 30 JPEGs with nonempty Finder comments in the owner's Astrophotos folder. Three already appeared in the gallery and now use captions based on their comments. The other two previously published photos retain their captions, for a total of 32 photographs. Capture dates come from EXIF DateTimeOriginal where available.
 

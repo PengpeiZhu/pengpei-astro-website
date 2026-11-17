@@ -27,7 +27,7 @@ GitHub Pages builds and deploys automatically on pushes to `main`. Use the manua
 
 - Personal mark: 朱 in documented Shuowen small seal script, used for the header and favicon. Preserve its glyph geometry, terracotta seal field and cream lettering; keep it visible on mobile. Provenance is in `ASSET-SOURCES.md`.
 - Name: Pengpei Zhu, 朱芃佩. Contact: `penzhu@space.dtu.dk`. ORCID: `0000-0002-6768-8335`.
-- Academic biography and education were sourced from the owner's CV and latest cover letter. Do not invent roles, awards, publications or dates.
+- The owner edits the homepage prose and research captions in `SITE-TEXT.md`. The build reads each labelled section and publishes it with the site. Keep the owner's wording unless a change is requested. Use the owner's records for roles, awards, publications and dates.
 - Top links: A little about me; My research; Fun Interactive projects; Astrophotos.
 - Order: About, Research, Publications, Interactive projects, Talks & Posters, Astrophotos, CV, Contact, Visitors.
 - The Milky Way photograph is the hero background. Keep the smaller portrait, visible Chinese name, and compact email/CV/Contact block beneath the portrait.

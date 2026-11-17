@@ -27,7 +27,7 @@ for (let url of new Set(urls)) {
 const presentationPdfs = urls
   .filter(url => url.startsWith(`${basePath}/talks/`) && url.endsWith(".pdf"))
   .map(url => url.slice(basePath.length + 1));
-for (const file of ["Pengpei-Zhu-CV.pdf", "publications.bib", "interactive/uvj-sed-lab.html", "interactive/sandage-sfh.html", ...presentationPdfs]) {
+for (const file of ["Pengpei-Zhu-CV.pdf", "publications.bib", "interactive/uvj-sed-lab.html", "interactive/sandage-sfh.html", "research/rs-outflow-escape-velocity.pdf", ...presentationPdfs]) {
   assert(readFileSync(resolve(root, file)).equals(readFileSync(resolve("public", file))), `Export changed ${file}`);
 }
 writeFileSync(resolve(root, ".nojekyll"), "");

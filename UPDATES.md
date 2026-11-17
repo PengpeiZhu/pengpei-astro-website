@@ -2,6 +2,13 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Editable website text and research figures
+
+- Moved the homepage prose, research text and figure captions into `SITE-TEXT.md`. The GitHub Pages build reads this file directly.
+- Used the owner's latest biography, highlighted its research sentence, added the three requested links and placed the annotated archery photo on the left. Added the editable Searching for Jobs portrait badge.
+- Added the supplied gas-recycling schematic and escape-velocity figure, plus SQuIGGLE Figure 1 and a link to the survey. Switched links with matched records from arXiv to SciX.
+- Compared the exported biography with the owner's GitHub edits, verified both export paths and all 19 SciX publication links, and checked the figure viewer and layout at desktop and phone widths.
+
 ## 2026-11-17 · Profile portrait, visitors, and presentation PDFs
 
 - Replaced the homepage portrait and sharing image with the owner's supplied photo. The homepage displays the full framing.

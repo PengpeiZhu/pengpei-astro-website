@@ -79,7 +79,17 @@ h3 { font-size: 34px; font-weight: 400; letter-spacing: -.025em; }
 .portrait { max-width: 410px; justify-self: end; width: 100%; }
 .portrait-frame { position: relative; }
 .portrait img { width: 100%; height: auto; }
-.portrait-frame > span { display: none; }
+.profile-job-badge {
+  position: absolute;
+  inset: 8px 8px auto auto;
+  max-width: calc(100% - 16px);
+  padding: 5px 9px;
+  background: #FFFFD0;
+  color: #35404E;
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.25;
+}
 .portrait figcaption { display: flex; flex-direction: column; gap: 2px; font-size: 17px; color: #d2ded5; margin-top: 20px; }
 .portrait figcaption > span:first-child { color: var(--paper); }
 .page-index { position: sticky; top: 0; z-index: 30; background: #f0f1ec; border-bottom: 1px solid var(--line); }
@@ -93,6 +103,7 @@ h3 { font-size: 34px; font-weight: 400; letter-spacing: -.025em; }
 .intro-grid { display: grid; grid-template-columns: 1fr 1.7fr; gap: 72px; margin-bottom: 82px; }
 .intro-copy { font-size: 23px; line-height: 1.7; max-width: 880px; }
 .intro-copy .lead { font-family: var(--serif); font-size: 35px; line-height: 1.35; letter-spacing: -.025em; }
+.intro-copy .lead + p { margin-top: 24px; }
 .intro-copy a { color: var(--teal); }
 .research-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px 80px; }
 .research-item { border-top: 1px solid var(--green); padding-top: 24px; }
@@ -102,7 +113,15 @@ h3 { font-size: 34px; font-weight: 400; letter-spacing: -.025em; }
 .research-item > p { font-size: 21px; line-height: 1.7; margin-top: 22px; max-width: 680px; }
 .research-item .project-note { font-size: 18px; color: var(--muted); margin-top: 20px; }
 .research-item .text-link { margin-top: 26px; }
-.science-figure { margin-top: 90px; }
+.research-figures {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: clamp(28px, 4vw, 54px);
+  margin-top: clamp(36px, 5vw, 72px);
+}
+.science-figure[data-layout="wide"], .science-figure[data-layout="tall"] { grid-column: 1 / -1; }
+.science-figure[data-layout="tall"] { width: min(100%, 650px); justify-self: center; }
 .figure-heading { display: flex; justify-content: space-between; align-items: center; gap: 28px; margin-bottom: 24px; }
 .figure-image-button { background: white; padding: 24px; border: 1px solid var(--line); width: 100%; cursor: zoom-in; }
 .figure-image-button img { width: 100%; height: auto; }
@@ -205,7 +224,7 @@ footer > a:first-child > span { font-size: 17px; margin-left: 10px; }
 .figure-dialog::backdrop { background: #0c211bd9; }
 .dialog-header { display: flex; justify-content: space-between; gap: 24px; align-items: center; margin-bottom: 26px; }
 .dialog-header h2 { font-family: var(--sans); text-transform: none; font-size: 28px; letter-spacing: -.02em; }
-.figure-dialog > img { width: 100%; background: white; }
+.figure-dialog > img { width: 100%; height: auto; background: white; }
 .figure-dialog > p { font-size: 18px; color: var(--muted); margin-top: 24px; }
 .figure-dialog > p a { color: var(--teal); }
 .toast { position: fixed; bottom: 25px; left: 50%; transform: translate(-50%,25px); padding: 16px 24px; background: var(--green); color: white; border: 1px solid #91a89c; font-size: 18px; z-index: 100; max-width: calc(100% - 32px); width: max-content; opacity: 0; pointer-events: none; transition: .2s; }
@@ -310,7 +329,7 @@ footer > a:first-child > span { font-size: 17px; margin-left: 10px; }
   .research-item .project-note { font-size: 18px; }
   .research-meta { font-size: 16px; }
   .text-link { font-size: 18px; }
-  .science-figure { margin-top: 52px; }
+  .research-figures { grid-template-columns: 1fr; }
   .figure-heading { gap: 18px; align-items: flex-start; }
   .figure-heading .eyebrow { max-width: 140px; }
   .small-button { font-size: 16px; padding: 9px 12px; }
@@ -483,7 +502,10 @@ h3 { font-size: 31px; }
 .section-title > .reading-track::before, .topic-heading > .reading-track::before, .research-contents .reading-track::before { display: none; }
 .about { background: #F8EADE; }
 .about .intro-grid { margin-bottom: 58px; }
-.inline-chinese { font-family: "Songti SC", serif; font-size: 1.2em; letter-spacing: .1em; white-space: nowrap; }
+.about-archery { max-width: 390px; margin-top: 30px; }
+.about-archery img { width: 100%; height: auto; }
+.about-archery figcaption { margin-top: 12px; color: var(--muted); font-size: 17px; line-height: 1.4; }
+.about .intro-copy strong { color: #8E3B2A; font-weight: 650; }
 .education-strip { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
 .education-strip li { padding-top: 28px; padding-right: 30px; }
 .education-strip li + li { padding-left: 30px; border-left: 1px solid var(--line); }
@@ -504,7 +526,8 @@ h3 { font-size: 31px; }
 .topic-heading .research-meta { font-size: 17px; margin-top: 22px; }
 .topic-copy h4 { font-family: var(--serif); font-size: 29px; font-weight: 400; line-height: 1.35; margin-bottom: 24px; }
 .topic-copy p { font-size: 22px; line-height: 1.7; }
-.topic-copy .project-note { font-size: 18px; color: var(--muted); }
+.topic-copy .project-note { margin: 24px 0 0; font-size: 18px; color: var(--muted); }
+.topic-copy .project-note p { font-size: inherit; }
 .topic-copy .text-link { margin-top: 28px; }
 .research-topic .science-figure { margin-top: 46px; }
 .publications { background: #FFDDD9; }

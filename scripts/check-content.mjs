@@ -1,8 +1,10 @@
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
+import { readSiteText } from "../lib/site-text.ts";
 
 const read = name => readFileSync(new URL(`../${name}`, import.meta.url), "utf8");
+readSiteText(new URL("../SITE-TEXT.md", import.meta.url));
 const papers = JSON.parse(read("lib/publications.json"));
 const source = JSON.parse(read("lib/publication-source.json"));
 const matches = JSON.parse(read("docs/scix-matches.json")).records;
@@ -24,4 +26,4 @@ for (const [name, expected] of Object.entries(hashes)) {
   const bytes = readFileSync(new URL(`../public/${name}`, import.meta.url));
   assert.equal(createHash("sha256").update(bytes).digest("hex"), expected, `Asset changed: ${name}. Review it and update docs/assets-sha256.json intentionally.`);
 }
-console.log(`Verified ${papers.length} SciX-matched records, bibliography, photographs and ${Object.keys(hashes).length} asset hashes.`);
+console.log(`Verified website text, ${papers.length} SciX-matched records, bibliography, photographs and ${Object.keys(hashes).length} asset hashes.`);
