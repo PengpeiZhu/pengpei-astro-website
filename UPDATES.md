@@ -9,6 +9,7 @@ Record future feature, content, design and maintenance changes here, newest firs
 - Renamed the Milky Way photo and dated it August 2025. Removed “Twilight above the ridge,” leaving 31 gallery photos.
 - Added the office address and links to LinkedIn, Google Scholar and DTU Orbit in Contact.
 - Added a crawlable sitemap for the homepage and two interactive labs, referenced from `robots.txt`.
+- Added the homepage verification tag for Google Search Console.
 - Verified the layout at desktop and narrow phone widths, the gallery rotation and August date, and both static export paths.
 
 ## 2026-11-17 · Compact research figures and job-search badge

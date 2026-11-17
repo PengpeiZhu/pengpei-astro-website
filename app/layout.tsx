@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   description: "Pengpei Zhu, PhD researcher at the Cosmic Dawn Center, DTU Space. Research on galaxy quenching, neutral gas flows and chemical enrichment.",
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3100"),
   alternates: { canonical: assetPath("/") },
+  verification: { google: "suCxd3VIgaO4ljOKOrlc3no38YuMrZLmtxNxr3_P5jo" },
   openGraph: { title: "Pengpei Zhu · Astronomy", description: "Galaxies, gas & cosmic history. Research, publications and CV.", url: assetPath("/"), images: [assetPath("/portrait-pengpei-zhu.jpg")], type: "website" },
   icons: {
     icon: assetPath("/favicon.svg"),
