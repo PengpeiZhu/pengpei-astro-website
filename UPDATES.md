@@ -2,6 +2,11 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-17 · Equal Contact and Visitors columns
+
+- Removed “Ideas are better shared” and gave Contact and Visitors equal space and matching heading sizes. The visitor map fills its column.
+- Verified the domain-root export, desktop and phone layouts, map rendering and email copying.
+
 ## 2026-11-17 · Research rows and compact visitor map
 
 - Arranged each research topic in a horizontal row on wider screens, with the two outflow figures next to each other. Aligned the Publications title and SciX link on one row.

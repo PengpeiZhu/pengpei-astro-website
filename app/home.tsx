@@ -302,7 +302,6 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
    <div className="wrap">
      <div className="section-header">
        <p className="eyebrow"><span>08</span>Contact</p>
-       <span className="section-note">Ideas are better shared</span>
      </div>
      <div className="contact-layout">
        <div>
