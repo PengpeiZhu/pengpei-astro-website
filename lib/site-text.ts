@@ -5,7 +5,6 @@ import remarkParse from "remark-parse";
 import { unified } from "unified";
 
 export const inlineSiteSections = [
-  "Opening label",
   "Opening headline",
   "Opening introduction",
   "Colour credit",
@@ -35,6 +34,7 @@ const siteSections = [
   "Spectra and open catalogues",
   "Interactive projects introduction",
   "Astrophotos introduction",
+  "Philosophy blogs",
 ] as const;
 
 export type SiteSection = (typeof siteSections)[number];

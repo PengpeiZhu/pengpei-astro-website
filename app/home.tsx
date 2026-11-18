@@ -16,6 +16,7 @@ const nav = [
   ["panels", "Interactive"],
   ["talks", "Talks & Posters"],
   ["photography", "Astrophotos"],
+  ["philosophy", "Philosophy blogs"],
   ["cv", "CV"],
   ["contact", "Contact"],
 ];
@@ -65,9 +66,9 @@ function arxivUrl(id: string) {
 }
 
 export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText; showJobBadge: boolean }){
- const [menu,setMenu]=useState(false),[filter,setFilter]=useState("selected"),[query,setQuery]=useState(""),[year,setYear]=useState("all"),[notice,setNotice]=useState("");
+ const [filter,setFilter]=useState("selected"),[query,setQuery]=useState(""),[year,setYear]=useState("all"),[notice,setNotice]=useState("");
  const [expandedFigure, setExpandedFigure] = useState(researchFigures["neutral-outflows"][0]);
- const dialog=useRef<HTMLDialogElement>(null),menuButton=useRef<HTMLButtonElement>(null);
+ const dialog=useRef<HTMLDialogElement>(null);
  const active=useReadingProgress(sectionIds);
  const matches=publications.filter(p=>(filter==="all"||(filter==="selected"&&p.selected)||(filter==="first"&&p.firstAuthor))&&(year==="all"||p.year===year)&&`${p.title} ${p.authors} ${p.journal} ${p.year} ${p.doi} ${p.arxiv} Pengpei Zhu`.toLowerCase().includes(query.toLowerCase().trim())).sort((a,b)=>filter==="selected"?0:a.scixOrder-b.scixOrder);
  useEffect(()=>{if(!notice)return;const timer=setTimeout(()=>setNotice(""),4000);return()=>clearTimeout(timer)},[notice]);
@@ -76,12 +77,20 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
    setExpandedFigure(figure);
    dialog.current?.showModal();
  }
- return <><a className="skip-link" href="#main">Skip to content</a><header className="site-header"><div className="header-inner"><a href="#top" className="wordmark" aria-label="Pengpei Zhu, home"><img className="mark" src={assetPath("/branding/zhu-seal.svg")} alt="" aria-hidden="true" width="42" height="42"/>Pengpei Zhu<span className="wordmark-cn" lang="zh">朱芃佩</span></a><button ref={menuButton} className="menu-toggle" aria-expanded={menu} aria-controls="main-nav" onClick={()=>setMenu(!menu)}>{menu?"Close −":"Menu +"}</button><nav id="main-nav" aria-label="Main navigation" className={menu?"open":""} onKeyDown={e=>{if(e.key==="Escape"){setMenu(false);menuButton.current?.focus()}}}>{openingLinks.map(([id,label])=><a key={id} href={`#${id}`} aria-current={active===id?"location":undefined} onClick={()=>setMenu(false)}>{label}</a>)}</nav></div></header>
+ return <>
+ <a className="skip-link" href="#main">Skip to content</a>
+ <header className="site-header">
+   <div className="header-inner">
+     <a href="#top" className="wordmark" aria-label="Pengpei Zhu, home">
+       <img className="mark" src={assetPath("/branding/zhu-seal.svg")} alt="" aria-hidden="true" width="42" height="42"/>
+       Pengpei Zhu<span className="wordmark-cn" lang="zh">朱芃佩</span>
+     </a>
+   </div>
+ </header>
  <main id="main">
   <section id="top" className="hero" aria-labelledby="hero-title" tabIndex={-1}>
     <div className="hero-main wrap">
       <div>
-        <p className="eyebrow hero-eyebrow"><i/>{siteText["Opening label"]}</p>
         <h1 id="hero-title">Pengpei Zhu <span lang="zh">朱芃佩</span></h1>
         <p className="hero-statement">{siteText["Opening headline"]}</p>
         <p className="hero-description">{siteText["Opening introduction"]}</p>
@@ -111,10 +120,11 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
             <span>{siteText["Profile affiliation"]}</span>
           </figcaption>
         </figure>
-        <address className="hero-contact" aria-label="Email, CV and contact details">
+        <address className="hero-contact" aria-label="Email, CV, publications and contact links">
           <a className="hero-email" href={`mailto:${emailAddress}`}>{emailAddress}</a>
           <div className="hero-contact-links">
             <a href={assetPath(`/${cvFilename}`)} download={cvFilename}>Download CV (PDF) <span aria-hidden="true">↓</span></a>
+            <External href={sciXUrl}>Publication on SciX <Arrow up/></External>
             <a href="#contact">Contact <Arrow/></a>
           </div>
         </address>
@@ -225,10 +235,7 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
      <div className="publications-heading">
        <SectionTitle section="publications">Publications</SectionTitle>
        <a className="scix-link" href={sciXUrl} target="_blank" rel="noreferrer">
-         <span>
-           <small>My publication list</small>
-           <span className="scix-link-title">Explore all papers on SciX</span>
-         </span>
+         <span className="scix-link-title">Publication List on SciX</span>
          <Arrow up/>
        </a>
      </div>
@@ -295,6 +302,12 @@ export default function Home({ copy: siteText, showJobBadge }: { copy: SiteText;
        <div className="intro-copy">{siteText["Astrophotos introduction"]}</div>
      </div>
      <Astrophotos />
+   </div>
+ </section>
+ <section id="philosophy" data-reading-section className="section philosophy" aria-labelledby="philosophy-title">
+   <div className="wrap intro-grid">
+     <SectionTitle section="philosophy">Philosophy blogs</SectionTitle>
+     <div className="intro-copy">{siteText["Philosophy blogs"]}</div>
    </div>
  </section>
  <section data-reading-section id="cv" className="section cv-section" aria-labelledby="cv-title"><div className="wrap"><div className="section-header"><p className="eyebrow"><span>07</span>Curriculum vitae</p><span className="section-note">A path through astronomy</span></div><div className="cv-layout"><div className="cv-intro"><SectionTitle section="cv">Curriculum<br/>vitae</SectionTitle><a className="button" href={assetPath(`/${cvFilename}`)} download={cvFilename}>Download full CV ↓</a><p className="download-note">PDF · 3 pages · Updated 16 November 2026</p></div><div className="cv-details"><h3 className="eyebrow">Education</h3><ol className="timeline"><li><span>2024 — present</span><div><h4>PhD in Astrophysics</h4><p>Cosmic Dawn Center · DTU Space</p><small>Supervisor: Francesco Valentino</small></div></li><li><span>2022 — 2024</span><div><h4>MSc in Astronomy</h4><p>Leiden University, the Netherlands</p><small>Astronomy Research programme</small></div></li><li><span>2017 — 2022</span><div><h4>BS in Physics &amp; BA in Philosophy</h4><p>University of California, Santa Cruz</p><small>Astrophysics and philosophy of science</small></div></li></ol><div className="cv-detail-columns"><div><h3 className="eyebrow">Recognition</h3><p><External href="https://www.universiteitleiden.nl/en/news/2024/11/several-leiden-science-students-excel-and-win-khmw-young-talent-awards">KHMW Young Talent Award <Arrow up/></External><small>Astronomy master’s thesis prize · 2024</small></p><p>UCSC Dean’s Scholarship<small>Undergraduate studies</small></p></div><div><h3 className="eyebrow">Community</h3><p>DTU Space PhD Committee<small>Member · 2026–2027</small></p><p>DAWN Summit 2025<small>Scientific Organizing Committee</small></p><p>Public observing at Leiden<small>L.A.D. “F. Kaiser” · 2022–2023</small></p></div></div></div></div></div></section>

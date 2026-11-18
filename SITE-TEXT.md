@@ -2,10 +2,6 @@
 
 Edit the text below the section labels and commit to `main` to publish it. Leave the `##` labels in place so each passage reaches the right part of the website. Leave the Job search badge section empty to hide the badge.
 
-## Opening label
-
-Astrophysics · Cosmic Dawn Center
-
 ## Opening headline
 
 Galaxies, gas & *cosmic history.*
@@ -124,6 +120,10 @@ Try a few examples here, or open a full lab to change the model parameters and e
 ### Looking up, beyond the spectra.
 
 The featured photos change every two weeks.
+
+## Philosophy blogs
+
+Coming soon...
 
 ## Office address
 

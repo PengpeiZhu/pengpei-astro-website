@@ -2,6 +2,14 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-18 · Search appearance, SciX links and Philosophy blogs
+
+- Set the preferred search title and site name to “Pengpei Zhu 朱芃佩” and linked a square PNG favicon made from the existing 朱 seal.
+- Removed the opening affiliation line and the upper-right menu. The homepage links and page index still provide section navigation.
+- Renamed the main SciX link “Publication List on SciX” and added “Publication on SciX” by the CV download.
+- Added Philosophy blogs after Astrophotos with “Coming soon...” editable in `SITE-TEXT.md`.
+- Verified both export paths, desktop and phone layouts, the Philosophy blogs anchor, the shared SciX destination, the CV download and the 96 × 96 favicon.
+
 ## 2026-11-17 · Equal Contact and Visitors columns
 
 - Removed “Ideas are better shared” and gave Contact and Visitors equal space and matching heading sizes. The visitor map fills its column.

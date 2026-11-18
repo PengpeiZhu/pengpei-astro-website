@@ -27,8 +27,8 @@ export function useReadingProgress(sectionIds: readonly string[]) {
       if (nextActive !== previousActive) {
         previousActive = nextActive;
         setActive(nextActive);
-        // Keep the current section visible within the narrow, scrollable index.
-        if (window.innerWidth <= 900 && nextActive) {
+        // Keep the current section visible when the page index scrolls horizontally.
+        if (nextActive) {
           const nav = index?.querySelector<HTMLElement>("nav");
           const link = nav?.querySelector<HTMLElement>(`a[href="#${nextActive}"]`);
           if (nav && link) {
