@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState, type KeyboardEvent } from "react";
+import { translator } from "../lib/site-labels";
+import type { Locale } from "../lib/locales";
 import { assetPath } from "../lib/site-path";
 import { LabPreview } from "./lab-preview";
 
@@ -26,7 +28,8 @@ const projects = [
   },
 ] as const;
 
-export function InteractiveProjects() {
+export function InteractiveProjects({ locale }: { locale: Locale }) {
+  const t = translator(locale);
   const [selected, setSelected] = useState(0);
 
   useEffect(() => {
@@ -54,7 +57,7 @@ export function InteractiveProjects() {
 
   return (
     <div className="project-browser" id="uvj-sed-lab">
-      <div className="project-menu" role="tablist" aria-label="Choose a project" aria-orientation="vertical" onKeyDown={moveFocus}>
+      <div className="project-menu" role="tablist" aria-label={t("Choose a project")} aria-orientation="vertical" onKeyDown={moveFocus}>
         {projects.map((project, index) => (
           <button
             className="project-tab"
@@ -69,8 +72,8 @@ export function InteractiveProjects() {
             tabIndex={index === selected ? 0 : -1}
             onClick={() => setSelected(index)}
           >
-            <span id={`project-name-${project.id}`} className="project-name">{project.title}</span>
-            <span id={`project-description-${project.id}`} className="project-description">{project.description}</span>
+            <span id={`project-name-${project.id}`} className="project-name">{t(project.title)}</span>
+            <span id={`project-description-${project.id}`} className="project-description">{t(project.description)}</span>
             <span className="project-tab-arrow" aria-hidden="true">→</span>
           </button>
         ))}
@@ -89,17 +92,17 @@ export function InteractiveProjects() {
             {index === selected && ("href" in project ? (
               <>
                 <div className="project-preview-heading">
-                  <p>{project.preview}</p>
+                  <p>{t(project.preview)}</p>
                   <a className="button button-light" href={assetPath(project.href)} target="_blank" rel="noreferrer">
-                    Open full lab <span className="sr-only">(opens in a new tab)</span><span aria-hidden="true">↗</span>
+                    {t("Open full lab")} <span className="sr-only">{t("(opens in a new tab)")}</span><span aria-hidden="true">↗</span>
                   </a>
                 </div>
-                <LabPreview href={assetPath(project.href)} title={project.title} variant={project.id} />
+                <LabPreview locale={locale} href={assetPath(project.href)} title={t(project.title)} variant={project.id} />
               </>
             ) : (
               <div className="project-coming-soon">
-                <h3>Metallicity explorer</h3>
-                <p>Coming soon. Browse spectra and compare the stellar population models behind individual metallicity measurements.</p>
+                <h3>{t("Metallicity explorer")}</h3>
+                <p>{t("Coming soon. Browse spectra and compare the stellar population models behind individual metallicity measurements.")}</p>
               </div>
             ))}
           </div>

@@ -8,6 +8,8 @@ This website includes **19 publications and preprints**, matched to the existing
 
 Open [SITE-TEXT.md](SITE-TEXT.md) on GitHub and click the pencil icon. Edit the text under the relevant heading. Use ordinary Markdown for links, bold text and paragraphs. Keep the section labels in place and commit to `main` to publish automatically. Clear the Job search badge text to hide the badge.
 
+The [Simplified Chinese](SITE-TEXT.zh-Hans.md) and [Traditional Chinese](SITE-TEXT.zh-Hant.md) files follow the same headings. Interface labels and translated photo captions live in [lib/site-labels.json](lib/site-labels.json).
+
 The table below points to the files for publication records, talks and photo captions.
 
 ## Review locally

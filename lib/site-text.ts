@@ -3,6 +3,7 @@ import { join } from "node:path";
 import type { ReactNode } from "react";
 import remarkParse from "remark-parse";
 import { unified } from "unified";
+import type { Locale } from "./locales";
 
 export const inlineSiteSections = [
   "Opening headline",
@@ -40,8 +41,9 @@ const siteSections = [
 export type SiteSection = (typeof siteSections)[number];
 export type SiteText = Record<SiteSection, ReactNode>;
 
-export function readSiteText(file: string | URL = join(process.cwd(), "SITE-TEXT.md")) {
-  const markdown = readFileSync(file, "utf8");
+export function readSiteText(locale: Locale = "en") {
+  const file = locale === "en" ? "SITE-TEXT.md" : `SITE-TEXT.${locale}.md`;
+  const markdown = readFileSync(join(process.cwd(), file), "utf8");
   const tree = unified().use(remarkParse).parse(markdown);
   const headings = tree.children.filter(node => node.type === "heading").filter(node => node.depth === 2);
   const sections = new Map<string, string>();
@@ -57,7 +59,7 @@ export function readSiteText(file: string | URL = join(process.cwd(), "SITE-TEXT
 
   const entries = siteSections.map(name => {
     const content = sections.get(name);
-    if (content === undefined) throw new Error(`Missing section in SITE-TEXT.md: ${name}`);
+    if (content === undefined) throw new Error(`Missing section in ${file}: ${name}`);
     return [name, content] as const;
   });
   return Object.fromEntries(entries) as Record<SiteSection, string>;

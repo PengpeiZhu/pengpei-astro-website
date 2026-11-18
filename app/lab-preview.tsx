@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { translator } from "../lib/site-labels";
+import type { Locale } from "../lib/locales";
 
 const previewStyles = {
   uvj: `
@@ -100,7 +102,8 @@ function previewDocument(source: string, variant: LabVariant) {
   return source.replace(headEnd, () => `${styles}${bridge}</head>`);
 }
 
-export function LabPreview({ href, title, variant }: { href: string; title: string; variant: LabVariant }) {
+export function LabPreview({ locale, href, title, variant }: { locale: Locale; href: string; title: string; variant: LabVariant }) {
+  const t = translator(locale);
   const iframe = useRef<HTMLIFrameElement>(null);
   const [source, setSource] = useState<string | null>(null);
   const [height, setHeight] = useState(470);
@@ -137,7 +140,7 @@ export function LabPreview({ href, title, variant }: { href: string; title: stri
   if (!source) {
     return (
       <p className="lab-preview-status" role="status">
-        {unavailable ? "Preview unavailable. You can still open the full lab above." : "Loading preview…"}
+        {t(unavailable ? "Preview unavailable. You can still open the full lab above." : "Loading preview…")}
       </p>
     );
   }
@@ -147,7 +150,7 @@ export function LabPreview({ href, title, variant }: { href: string; title: stri
       ref={iframe}
       className="lab-preview-frame"
       srcDoc={source}
-      title={`${title} preview`}
+      title={`${title} · ${t("Preview")}`}
       sandbox="allow-scripts"
       height={height + 2}
       loading="lazy"

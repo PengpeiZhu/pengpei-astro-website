@@ -1,5 +1,6 @@
 import Markdown, { type Components } from "react-markdown";
 import { assetPath } from "../lib/site-path";
+import type { Locale } from "../lib/locales";
 import { inlineSiteSections, readSiteText, type SiteText } from "../lib/site-text";
 import Home from "./home";
 
@@ -20,12 +21,12 @@ const inlineComponents: Components = {
 
 const inlineSections = new Set<string>(inlineSiteSections);
 
-export default function Page() {
-  const markdown = readSiteText();
+export function SitePage({ locale }: { locale: Locale }) {
+  const markdown = readSiteText(locale);
   const copy = Object.fromEntries(Object.entries(markdown).map(([section, content]) => [
     section,
     <Markdown skipHtml components={inlineSections.has(section) ? inlineComponents : proseComponents}>{content}</Markdown>,
   ])) as SiteText;
 
-  return <Home copy={copy} showJobBadge={Boolean(markdown["Job search badge"])} />;
+  return <Home locale={locale} copy={copy} showJobBadge={Boolean(markdown["Job search badge"])} />;
 }

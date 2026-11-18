@@ -4,7 +4,7 @@ Edit the text below the section labels and commit to `main` to publish it. Leave
 
 ## Opening headline
 
-Galaxies, gas & *cosmic history.*
+Galaxy evolution & cosmic history
 
 ## Opening introduction
 

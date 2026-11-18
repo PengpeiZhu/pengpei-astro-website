@@ -2,9 +2,10 @@ import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
 import { createHash } from "node:crypto";
 import { readSiteText } from "../lib/site-text.ts";
+import { locales } from "../lib/locales.ts";
 
 const read = name => readFileSync(new URL(`../${name}`, import.meta.url), "utf8");
-readSiteText(new URL("../SITE-TEXT.md", import.meta.url));
+for (const { lang } of locales) readSiteText(lang);
 const papers = JSON.parse(read("lib/publications.json"));
 const source = JSON.parse(read("lib/publication-source.json"));
 const matches = JSON.parse(read("docs/scix-matches.json")).records;

@@ -2,6 +2,13 @@
 
 Record future feature, content, design and maintenance changes here, newest first. Include the date, what changed, validation, and any relevant deployment status.
 
+## 2026-11-18 · Chinese versions and the Publications heading
+
+- Updated the homepage headline to “Galaxy evolution & cosmic history”.
+- Added Simplified and Traditional Chinese pages, a language selector at the top right, and alternate language links for search engines. Translated the site text, controls, captions and academic listings. Linked source PDFs and interactive lab files retain their original language.
+- Shortened the main link to “Publication on SciX” and aligned it next to the Publications title on one row.
+- Verified both export paths, language switching, the Publications row from 320 to 1440 pixels, Chinese publication search and the existing gallery and laboratory links.
+
 ## 2026-11-18 · Search appearance, SciX links and Philosophy blogs
 
 - Set the preferred search title and site name to “Pengpei Zhu 朱芃佩” and linked a square PNG favicon made from the existing 朱 seal.
